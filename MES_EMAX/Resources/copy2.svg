@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1" style="enable-background:new 0 0 32 32">
+  <style type="text/css">
+	.Yellow{fill:#FFB115;}
+	.Red{fill:#D11C1C;}
+	.Blue{fill:#1177D7;}
+	.Green{fill:#039C23;}
+	.Black{fill:#727272;}
+	.White{fill:#FFFFFF;}
+	.st0{opacity:0.75;}
+</style>
+  <g id="Copy">
+    <path d="M21,2H11c-0.5,0-1,0.5-1,1v5H5C4.5,8,4,8.5,4,9v20c0,0.5,0.5,1,1,1h16c0.5,0,1-0.5,1-1v-5h5c0.5,0,1-0.5,1-1   V9L21,2z M20,28H6V10h8v5c0,0.5,0.5,1,1,1h5V28z M26,22h-4v-7l-7-7h-3V4h8v5c0,0.5,0.5,1,1,1h5V22z" class="Black" />
+  </g>
+</svg>
