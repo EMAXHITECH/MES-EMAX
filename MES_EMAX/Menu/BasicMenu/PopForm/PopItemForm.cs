@@ -12,7 +12,7 @@ using System.IO;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
 
-namespace SERP
+namespace MES
 {
     public partial class PopItemForm : BaseForm
     {

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regMenu
     {
@@ -37,7 +37,7 @@
             this.txt_MenuM_NM = new DevExpress.XtraEditors.TextEdit();
             this.txt_MenuM = new DevExpress.XtraEditors.ButtonEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.gc_Menu_S = new SERP.GridControlEx();
+            this.gc_Menu_S = new MES.GridControlEx();
             this.gv_Menu_S = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -204,7 +204,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_Menu_S.CellFocus = true;
             this.gc_Menu_S.EnterYN = true;
-            this.gc_Menu_S.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Menu_S.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Menu_S.ExpansionCHK = false;
             this.gc_Menu_S.Location = new System.Drawing.Point(0, 106);
             this.gc_Menu_S.MainView = this.gv_Menu_S;

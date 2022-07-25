@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class BaseUserControl
     {

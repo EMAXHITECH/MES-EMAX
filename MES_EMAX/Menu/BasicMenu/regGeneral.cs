@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraEditors.Controls;
 
-namespace SERP
+namespace MES
 {
     public partial class regGeneral : BaseReg
     {

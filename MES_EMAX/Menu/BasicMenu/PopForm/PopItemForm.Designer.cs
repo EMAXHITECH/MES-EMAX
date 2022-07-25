@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class PopItemForm
     {
@@ -32,10 +32,10 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.label_Name = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Delete = new SERP.SimpleButtonEx();
-            this.btn_Save = new SERP.SimpleButtonEx();
-            this.btn_Close = new SERP.SimpleButtonEx();
-            this.btn_Insert = new SERP.SimpleButtonEx();
+            this.btn_Delete = new MES.SimpleButtonEx();
+            this.btn_Save = new MES.SimpleButtonEx();
+            this.btn_Close = new MES.SimpleButtonEx();
+            this.btn_Insert = new MES.SimpleButtonEx();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.txt_UpUser = new DevExpress.XtraEditors.TextEdit();
             this.txt_RegUser = new DevExpress.XtraEditors.TextEdit();
@@ -68,10 +68,10 @@
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.TabPage_1 = new DevExpress.XtraTab.XtraTabPage();
-            this.Grid_In = new SERP.GridControlEx();
+            this.Grid_In = new MES.GridControlEx();
             this.View_In = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.TabPage_2 = new DevExpress.XtraTab.XtraTabPage();
-            this.Grid_Out = new SERP.GridControlEx();
+            this.Grid_Out = new MES.GridControlEx();
             this.View_Out = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txt_Stock_Qty = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
@@ -181,7 +181,7 @@
             this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Delete.Appearance.Options.UseBackColor = true;
             this.btn_Delete.Appearance.Options.UseBorderColor = true;
-            this.btn_Delete.button_GB = SERP.SimpleButtonEx.Button_GB.Delete;
+            this.btn_Delete.button_GB = MES.SimpleButtonEx.Button_GB.Delete;
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
             this.btn_Delete.Location = new System.Drawing.Point(83, 5);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -201,7 +201,7 @@
             this.btn_Save.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(85)))), ((int)(((byte)(117)))));
             this.btn_Save.Appearance.Options.UseBackColor = true;
             this.btn_Save.Appearance.Options.UseBorderColor = true;
-            this.btn_Save.button_GB = SERP.SimpleButtonEx.Button_GB.Save;
+            this.btn_Save.button_GB = MES.SimpleButtonEx.Button_GB.Save;
             this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
             this.btn_Save.Location = new System.Drawing.Point(161, 5);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -221,8 +221,8 @@
             this.btn_Close.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
-            this.btn_Close.button_GB = SERP.SimpleButtonEx.Button_GB.Exit;
-            this.btn_Close.ImageOptions.Image = global::SERP.Properties.Resources.cancel_32x32;
+            this.btn_Close.button_GB = MES.SimpleButtonEx.Button_GB.Exit;
+            this.btn_Close.ImageOptions.Image = global::MES.Properties.Resources.cancel_32x32;
             this.btn_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Close.ImageOptions.SvgImage")));
             this.btn_Close.Location = new System.Drawing.Point(240, 5);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -242,7 +242,7 @@
             this.btn_Insert.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Insert.Appearance.Options.UseBackColor = true;
             this.btn_Insert.Appearance.Options.UseBorderColor = true;
-            this.btn_Insert.button_GB = SERP.SimpleButtonEx.Button_GB.Add;
+            this.btn_Insert.button_GB = MES.SimpleButtonEx.Button_GB.Add;
             this.btn_Insert.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Insert.ImageOptions.SvgImage")));
             this.btn_Insert.Location = new System.Drawing.Point(5, 5);
             this.btn_Insert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -717,7 +717,7 @@
             this.Grid_In.CellFocus = true;
             this.Grid_In.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_In.EnterYN = true;
-            this.Grid_In.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.Grid_In.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.Grid_In.ExpansionCHK = false;
             this.Grid_In.Head_DoubleChk = true;
             this.Grid_In.Location = new System.Drawing.Point(0, 0);
@@ -757,7 +757,7 @@
             this.Grid_Out.CellFocus = true;
             this.Grid_Out.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Out.EnterYN = true;
-            this.Grid_Out.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.Grid_Out.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.Grid_Out.ExpansionCHK = false;
             this.Grid_Out.Head_DoubleChk = true;
             this.Grid_Out.Location = new System.Drawing.Point(0, 0);
@@ -1006,7 +1006,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureEdit_Item.Location = new System.Drawing.Point(635, 14);
             this.pictureEdit_Item.Name = "pictureEdit_Item";
-            this.pictureEdit_Item.Properties.InitialImageOptions.Image = global::SERP.Properties.Resources.photo;
+            this.pictureEdit_Item.Properties.InitialImageOptions.Image = global::MES.Properties.Resources.photo;
             this.pictureEdit_Item.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit_Item.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit_Item.ShowToolTips = false;
@@ -1116,10 +1116,10 @@
         #endregion
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private SERP.SimpleButtonEx btn_Insert;
-        private SERP.SimpleButtonEx btn_Close;
-        private SERP.SimpleButtonEx btn_Save;
-        private SERP.SimpleButtonEx btn_Delete;
+        private MES.SimpleButtonEx btn_Insert;
+        private MES.SimpleButtonEx btn_Close;
+        private MES.SimpleButtonEx btn_Save;
+        private MES.SimpleButtonEx btn_Delete;
         private DevExpress.XtraEditors.PanelControl panel_H;
         private DevExpress.XtraEditors.TextEdit txt_UpUser;
         private DevExpress.XtraEditors.TextEdit txt_RegUser;

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class Change_Config
     {
@@ -83,7 +83,7 @@
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
             this.btn_Close.Appearance.Options.UseForeColor = true;
-            this.btn_Close.ImageOptions.SvgImage = global::SERP.Properties.Resources.actions_deletecircled;
+            this.btn_Close.ImageOptions.SvgImage = global::MES.Properties.Resources.actions_deletecircled;
             this.btn_Close.Location = new System.Drawing.Point(209, 219);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Close.Name = "btn_Close";

@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
 
-namespace SERP
+namespace MES
 {
     public partial class regWork : BaseReg
     {

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptWorkPlan
     {
@@ -40,7 +40,7 @@
             this.dt_From = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_WorkPlan = new SERP.GridControlEx();
+            this.gc_WorkPlan = new MES.GridControlEx();
             this.gv_WorkPlan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tree_Plan = new DevExpress.XtraTreeList.TreeList();
             this.imageCollection_BOM = new DevExpress.Utils.ImageCollection(this.components);
@@ -237,7 +237,7 @@
             this.gc_WorkPlan.CellFocus = true;
             this.gc_WorkPlan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_WorkPlan.EnterYN = true;
-            this.gc_WorkPlan.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_WorkPlan.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_WorkPlan.ExpansionCHK = false;
             this.gc_WorkPlan.Head_DoubleChk = true;
             this.gc_WorkPlan.Location = new System.Drawing.Point(0, 0);

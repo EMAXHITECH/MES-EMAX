@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regBOM
     {
@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regBOM));
-            this.gc_BOM = new SERP.GridControlEx();
+            this.gc_BOM = new MES.GridControlEx();
             this.gv_BOM = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.dpiAwareImageCollection1 = new DevExpress.Utils.DPIAwareImageCollection(this.components);
-            this.btn_Copy = new SERP.SimpleButtonEx();
+            this.btn_Copy = new MES.SimpleButtonEx();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Item = new SERP.GridControlEx();
+            this.gc_Item = new MES.GridControlEx();
             this.gv_Item = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -145,7 +145,7 @@
             this.gc_BOM.CellFocus = true;
             this.gc_BOM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_BOM.EnterYN = true;
-            this.gc_BOM.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_BOM.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_BOM.ExpansionCHK = false;
             this.gc_BOM.Location = new System.Drawing.Point(2, 29);
             this.gc_BOM.MainView = this.gv_BOM;
@@ -185,7 +185,7 @@
             this.btn_Copy.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Copy.Appearance.Options.UseBackColor = true;
             this.btn_Copy.Appearance.Options.UseBorderColor = true;
-            this.btn_Copy.button_GB = SERP.SimpleButtonEx.Button_GB.Copy;
+            this.btn_Copy.button_GB = MES.SimpleButtonEx.Button_GB.Copy;
             this.btn_Copy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Copy.ImageOptions.SvgImage")));
             this.btn_Copy.Location = new System.Drawing.Point(842, 103);
             this.btn_Copy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -239,7 +239,7 @@
             this.gc_Item.CellFocus = true;
             this.gc_Item.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Item.EnterYN = true;
-            this.gc_Item.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Item.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Item.ExpansionCHK = false;
             this.gc_Item.Location = new System.Drawing.Point(0, 0);
             this.gc_Item.MainView = this.gv_Item;

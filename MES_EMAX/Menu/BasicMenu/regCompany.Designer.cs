@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regCompany
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regCompany));
-            this.Grid_Company = new SERP.GridControlEx();
+            this.Grid_Company = new MES.GridControlEx();
             this.View_Company = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -116,7 +116,7 @@
             this.Grid_Company.CellFocus = true;
             this.Grid_Company.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Company.EnterYN = true;
-            this.Grid_Company.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_Company.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_Company.ExpansionCHK = false;
             this.Grid_Company.Location = new System.Drawing.Point(0, 40);
             this.Grid_Company.MainView = this.View_Company;

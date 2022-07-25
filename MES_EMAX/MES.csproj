@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{79E54418-AE84-453D-ABD7-283AC74C509B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SERP</RootNamespace>
-    <AssemblyName>SERP</AssemblyName>
+    <RootNamespace>MES</RootNamespace>
+    <AssemblyName>MES</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

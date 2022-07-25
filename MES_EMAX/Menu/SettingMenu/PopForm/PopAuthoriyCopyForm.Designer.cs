@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class PopAuthoriyCopyForm
     {
@@ -33,9 +33,9 @@
             this.txt_UserName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Save = new SERP.SimpleButtonEx();
-            this.btn_Close = new SERP.SimpleButtonEx();
-            this.gc_User = new SERP.GridControlEx();
+            this.btn_Save = new MES.SimpleButtonEx();
+            this.btn_Close = new MES.SimpleButtonEx();
+            this.gc_User = new MES.GridControlEx();
             this.gv_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -98,7 +98,7 @@
             this.btn_Save.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(85)))), ((int)(((byte)(117)))));
             this.btn_Save.Appearance.Options.UseBackColor = true;
             this.btn_Save.Appearance.Options.UseBorderColor = true;
-            this.btn_Save.button_GB = SERP.SimpleButtonEx.Button_GB.Save;
+            this.btn_Save.button_GB = MES.SimpleButtonEx.Button_GB.Save;
             this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
             this.btn_Save.Location = new System.Drawing.Point(6, 4);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -119,7 +119,7 @@
             this.btn_Close.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
-            this.btn_Close.button_GB = SERP.SimpleButtonEx.Button_GB.Exit;
+            this.btn_Close.button_GB = MES.SimpleButtonEx.Button_GB.Exit;
             this.btn_Close.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Close.ImageOptions.Image")));
             this.btn_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Close.ImageOptions.SvgImage")));
             this.btn_Close.Location = new System.Drawing.Point(85, 4);
@@ -140,7 +140,7 @@
             this.gc_User.CellFocus = true;
             this.gc_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_User.EnterYN = true;
-            this.gc_User.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_User.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_User.ExpansionCHK = false;
             this.gc_User.Location = new System.Drawing.Point(0, 51);
             this.gc_User.MainView = this.gv_User;

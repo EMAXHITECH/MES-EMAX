@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regItem
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regItem));
-            this.gc_Item = new SERP.GridControlEx();
+            this.gc_Item = new MES.GridControlEx();
             this.gv_Item = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -118,7 +118,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_Item.CellFocus = true;
             this.gc_Item.EnterYN = true;
-            this.gc_Item.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Item.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Item.ExpansionCHK = false;
             this.gc_Item.Location = new System.Drawing.Point(0, 42);
             this.gc_Item.MainView = this.gv_Item;
@@ -167,7 +167,7 @@
         }
 
         #endregion
-        private SERP.GridControlEx gc_Item;
+        private MES.GridControlEx gc_Item;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_Item;
     }
 }

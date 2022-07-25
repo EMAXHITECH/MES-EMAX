@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regUser
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regUser));
-            this.gc_User = new SERP.GridControlEx();
+            this.gc_User = new MES.GridControlEx();
             this.gv_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -118,7 +118,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_User.CellFocus = true;
             this.gc_User.EnterYN = true;
-            this.gc_User.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_User.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_User.ExpansionCHK = false;
             this.gc_User.Location = new System.Drawing.Point(0, 42);
             this.gc_User.MainView = this.gv_User;

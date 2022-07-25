@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class PopUserForm
     {
@@ -33,10 +33,10 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.label_Name = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Delete = new SERP.SimpleButtonEx();
-            this.btn_Save = new SERP.SimpleButtonEx();
-            this.btn_Close = new SERP.SimpleButtonEx();
-            this.btn_Insert = new SERP.SimpleButtonEx();
+            this.btn_Delete = new MES.SimpleButtonEx();
+            this.btn_Save = new MES.SimpleButtonEx();
+            this.btn_Close = new MES.SimpleButtonEx();
+            this.btn_Insert = new MES.SimpleButtonEx();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.txt_UserCode = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -45,8 +45,8 @@
             this.dt_InDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.txt_UserPosNM = new DevExpress.XtraEditors.TextEdit();
-            this.txt_UserPos = new DevExpress.XtraEditors.ButtonEdit();
+            this.txt_UMESosNM = new DevExpress.XtraEditors.TextEdit();
+            this.txt_UMESos = new DevExpress.XtraEditors.ButtonEdit();
             this.txt_UserName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.check_Use = new DevExpress.XtraEditors.CheckEdit();
@@ -78,8 +78,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Sign.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_InDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_InDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_UserPosNM.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_UserPos.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UMESosNM.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UMESos.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_UserName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.check_Use.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_DeptNM.Properties)).BeginInit();
@@ -130,7 +130,7 @@
             this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Delete.Appearance.Options.UseBackColor = true;
             this.btn_Delete.Appearance.Options.UseBorderColor = true;
-            this.btn_Delete.button_GB = SERP.SimpleButtonEx.Button_GB.Delete;
+            this.btn_Delete.button_GB = MES.SimpleButtonEx.Button_GB.Delete;
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
             this.btn_Delete.Location = new System.Drawing.Point(83, 4);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -150,7 +150,7 @@
             this.btn_Save.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(85)))), ((int)(((byte)(117)))));
             this.btn_Save.Appearance.Options.UseBackColor = true;
             this.btn_Save.Appearance.Options.UseBorderColor = true;
-            this.btn_Save.button_GB = SERP.SimpleButtonEx.Button_GB.Save;
+            this.btn_Save.button_GB = MES.SimpleButtonEx.Button_GB.Save;
             this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
             this.btn_Save.Location = new System.Drawing.Point(161, 4);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -170,8 +170,8 @@
             this.btn_Close.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
-            this.btn_Close.button_GB = SERP.SimpleButtonEx.Button_GB.Exit;
-            this.btn_Close.ImageOptions.Image = global::SERP.Properties.Resources.cancel_32x32;
+            this.btn_Close.button_GB = MES.SimpleButtonEx.Button_GB.Exit;
+            this.btn_Close.ImageOptions.Image = global::MES.Properties.Resources.cancel_32x32;
             this.btn_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Close.ImageOptions.SvgImage")));
             this.btn_Close.Location = new System.Drawing.Point(240, 4);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -191,7 +191,7 @@
             this.btn_Insert.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Insert.Appearance.Options.UseBackColor = true;
             this.btn_Insert.Appearance.Options.UseBorderColor = true;
-            this.btn_Insert.button_GB = SERP.SimpleButtonEx.Button_GB.Add;
+            this.btn_Insert.button_GB = MES.SimpleButtonEx.Button_GB.Add;
             this.btn_Insert.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Insert.ImageOptions.SvgImage")));
             this.btn_Insert.Location = new System.Drawing.Point(5, 4);
             this.btn_Insert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -245,8 +245,8 @@
             this.panelControl3.Controls.Add(this.dt_InDate);
             this.panelControl3.Controls.Add(this.labelControl1);
             this.panelControl3.Controls.Add(this.labelControl8);
-            this.panelControl3.Controls.Add(this.txt_UserPosNM);
-            this.panelControl3.Controls.Add(this.txt_UserPos);
+            this.panelControl3.Controls.Add(this.txt_UMESosNM);
+            this.panelControl3.Controls.Add(this.txt_UMESos);
             this.panelControl3.Controls.Add(this.txt_UserName);
             this.panelControl3.Controls.Add(this.labelControl7);
             this.panelControl3.Controls.Add(this.check_Use);
@@ -323,34 +323,34 @@
             this.labelControl8.TabIndex = 10;
             this.labelControl8.Text = "직책";
             // 
-            // txt_UserPosNM
+            // txt_UMESosNM
             // 
-            this.txt_UserPosNM.Enabled = false;
-            this.txt_UserPosNM.Location = new System.Drawing.Point(215, 71);
-            this.txt_UserPosNM.Name = "txt_UserPosNM";
-            this.txt_UserPosNM.Properties.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.txt_UserPosNM.Properties.Appearance.Font = new System.Drawing.Font("나눔바른고딕", 11F);
-            this.txt_UserPosNM.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_UserPosNM.Properties.Appearance.Options.UseFont = true;
-            this.txt_UserPosNM.Size = new System.Drawing.Size(146, 24);
-            this.txt_UserPosNM.TabIndex = 9;
+            this.txt_UMESosNM.Enabled = false;
+            this.txt_UMESosNM.Location = new System.Drawing.Point(215, 71);
+            this.txt_UMESosNM.Name = "txt_UMESosNM";
+            this.txt_UMESosNM.Properties.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.txt_UMESosNM.Properties.Appearance.Font = new System.Drawing.Font("나눔바른고딕", 11F);
+            this.txt_UMESosNM.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_UMESosNM.Properties.Appearance.Options.UseFont = true;
+            this.txt_UMESosNM.Size = new System.Drawing.Size(146, 24);
+            this.txt_UMESosNM.TabIndex = 9;
             // 
-            // txt_UserPos
+            // txt_UMESos
             // 
-            this.txt_UserPos.EditValue = "";
-            this.txt_UserPos.Location = new System.Drawing.Point(114, 71);
-            this.txt_UserPos.Name = "txt_UserPos";
-            this.txt_UserPos.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
-            this.txt_UserPos.Properties.Appearance.Font = new System.Drawing.Font("나눔바른고딕", 11F);
-            this.txt_UserPos.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_UserPos.Properties.Appearance.Options.UseFont = true;
-            this.txt_UserPos.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txt_UMESos.EditValue = "";
+            this.txt_UMESos.Location = new System.Drawing.Point(114, 71);
+            this.txt_UMESos.Name = "txt_UMESos";
+            this.txt_UMESos.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
+            this.txt_UMESos.Properties.Appearance.Font = new System.Drawing.Font("나눔바른고딕", 11F);
+            this.txt_UMESos.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_UMESos.Properties.Appearance.Options.UseFont = true;
+            this.txt_UMESos.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search)});
-            this.txt_UserPos.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_UserPos_Properties_ButtonClick);
-            this.txt_UserPos.Size = new System.Drawing.Size(100, 24);
-            this.txt_UserPos.TabIndex = 4;
-            this.txt_UserPos.EditValueChanged += new System.EventHandler(this.txt_UserPos_EditValueChanged);
-            this.txt_UserPos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_UserPos_KeyPress);
+            this.txt_UMESos.Properties.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txt_UMESos_Properties_ButtonClick);
+            this.txt_UMESos.Size = new System.Drawing.Size(100, 24);
+            this.txt_UMESos.TabIndex = 4;
+            this.txt_UMESos.EditValueChanged += new System.EventHandler(this.txt_UMESos_EditValueChanged);
+            this.txt_UMESos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_UMESos_KeyPress);
             // 
             // txt_UserName
             // 
@@ -590,8 +590,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit_Sign.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_InDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dt_InDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_UserPosNM.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_UserPos.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UMESosNM.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_UMESos.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_UserName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.check_Use.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_DeptNM.Properties)).EndInit();
@@ -635,8 +635,8 @@
         private DevExpress.XtraEditors.TextEdit txt_UserName;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.TextEdit txt_UserPosNM;
-        private DevExpress.XtraEditors.ButtonEdit txt_UserPos;
+        private DevExpress.XtraEditors.TextEdit txt_UMESosNM;
+        private DevExpress.XtraEditors.ButtonEdit txt_UMESos;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.DateEdit dt_InDate;
         private DevExpress.XtraEditors.PictureEdit pictureEdit_Sign;

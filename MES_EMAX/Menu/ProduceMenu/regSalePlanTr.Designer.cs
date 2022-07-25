@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regSalePlanTr
     {
@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regSalePlanTr));
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_OrderS = new SERP.GridControlEx();
+            this.gc_OrderS = new MES.GridControlEx();
             this.gv_OrderS = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btn_Copy = new SERP.SimpleButtonEx();
+            this.btn_Copy = new MES.SimpleButtonEx();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txt_UpUser = new DevExpress.XtraEditors.TextEdit();
@@ -188,7 +188,7 @@
             this.gc_OrderS.CellFocus = true;
             this.gc_OrderS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_OrderS.EnterYN = true;
-            this.gc_OrderS.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_OrderS.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_OrderS.ExpansionCHK = true;
             this.gc_OrderS.Head_DoubleChk = true;
             this.gc_OrderS.Location = new System.Drawing.Point(2, 2);
@@ -224,7 +224,7 @@
             this.btn_Copy.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Copy.Appearance.Options.UseBackColor = true;
             this.btn_Copy.Appearance.Options.UseBorderColor = true;
-            this.btn_Copy.button_GB = SERP.SimpleButtonEx.Button_GB.Copy;
+            this.btn_Copy.button_GB = MES.SimpleButtonEx.Button_GB.Copy;
             this.btn_Copy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Copy.ImageOptions.SvgImage")));
             this.btn_Copy.Location = new System.Drawing.Point(862, 68);
             this.btn_Copy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

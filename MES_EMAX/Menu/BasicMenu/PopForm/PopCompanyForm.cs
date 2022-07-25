@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace SERP
+namespace MES
 {
     public partial class PopCompanyForm : BaseForm
     {

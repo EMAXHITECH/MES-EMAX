@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regWorkResult
     {
@@ -74,7 +74,7 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.gc_User = new SERP.GridControlEx();
+            this.gc_User = new MES.GridControlEx();
             this.gv_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -804,7 +804,7 @@
             this.gc_User.CellFocus = true;
             this.gc_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_User.EnterYN = true;
-            this.gc_User.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_User.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_User.ExpansionCHK = false;
             this.gc_User.Head_DoubleChk = true;
             this.gc_User.Location = new System.Drawing.Point(0, 0);

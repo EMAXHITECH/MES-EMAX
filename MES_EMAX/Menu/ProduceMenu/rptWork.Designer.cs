@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptWork
     {
@@ -34,7 +34,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.dt_From = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.Grid_Work = new SERP.GridControlEx();
+            this.Grid_Work = new MES.GridControlEx();
             this.View_Work = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -187,7 +187,7 @@
             this.Grid_Work.CellFocus = true;
             this.Grid_Work.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Work.EnterYN = true;
-            this.Grid_Work.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_Work.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_Work.ExpansionCHK = false;
             this.Grid_Work.Location = new System.Drawing.Point(0, 101);
             this.Grid_Work.MainView = this.View_Work;

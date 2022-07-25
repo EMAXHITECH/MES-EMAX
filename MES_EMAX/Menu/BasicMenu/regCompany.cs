@@ -13,7 +13,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using DevExpress.XtraTab;
 
-namespace SERP
+namespace MES
 {
     public partial class regCompany : BaseReg
     {

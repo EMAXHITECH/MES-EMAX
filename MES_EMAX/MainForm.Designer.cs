@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class MainForm
     {
@@ -427,7 +427,7 @@
             this.btn_Calculator.Border = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.btn_Calculator.Caption = "계산기";
             this.btn_Calculator.Id = 2;
-            this.btn_Calculator.ImageOptions.SvgImage = global::SERP.Properties.Resources.business_calculator;
+            this.btn_Calculator.ImageOptions.SvgImage = global::MES.Properties.Resources.business_calculator;
             this.btn_Calculator.Name = "btn_Calculator";
             this.btn_Calculator.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_Calculator_ItemClick);
             // 

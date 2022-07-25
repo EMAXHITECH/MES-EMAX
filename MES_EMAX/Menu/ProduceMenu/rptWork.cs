@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace SERP
+namespace MES
 {
     public partial class rptWork : BaseReg
     {

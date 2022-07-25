@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptWorkResult
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rptWorkResult));
-            this.Grid_Result = new SERP.GridControlEx();
+            this.Grid_Result = new MES.GridControlEx();
             this.View_Result = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.dt_To = new DevExpress.XtraEditors.DateEdit();
@@ -117,7 +117,7 @@
             this.Grid_Result.CellFocus = true;
             this.Grid_Result.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Result.EnterYN = true;
-            this.Grid_Result.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_Result.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_Result.ExpansionCHK = false;
             this.Grid_Result.Location = new System.Drawing.Point(0, 101);
             this.Grid_Result.MainView = this.View_Result;
