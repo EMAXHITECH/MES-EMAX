@@ -12,7 +12,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraReports.UI;
 
-namespace SERP
+namespace MES
 {
     public partial class regSalePlanTr : BaseReg
     {

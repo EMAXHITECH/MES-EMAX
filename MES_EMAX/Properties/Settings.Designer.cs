@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SERP.Properties {
+namespace MES.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

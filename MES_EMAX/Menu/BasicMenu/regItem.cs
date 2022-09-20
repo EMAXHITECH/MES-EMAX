@@ -12,7 +12,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
 using System.IO;
 
-namespace SERP
+namespace MES
 {
     public partial class regItem : BaseReg
     {

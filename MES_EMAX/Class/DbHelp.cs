@@ -15,7 +15,7 @@ using DevExpress.XtraEditors.Repository;
 using System.Drawing;
 using DevExpress.XtraTab;
 
-namespace SERP
+namespace MES
 {
     public class DbHelp
     {

@@ -13,7 +13,7 @@ using DevExpress.XtraTreeList.Columns;
 using DevExpress.XtraTreeList.Nodes;
 using DevExpress.Utils;
 
-namespace SERP
+namespace MES
 {
     public partial class rptBBOM : BaseReg
     {

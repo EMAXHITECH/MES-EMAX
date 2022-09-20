@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraWaitForm;
 
-namespace SERP
+namespace MES
 {
     public partial class BaseWaitForm : WaitForm
     {

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regBasicSet
     {
@@ -39,7 +39,7 @@
             this.txt_MenuM_NM = new DevExpress.XtraEditors.TextEdit();
             this.txt_MenuM = new DevExpress.XtraEditors.ButtonEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.gc_BasicSet = new SERP.GridControlEx();
+            this.gc_BasicSet = new MES.GridControlEx();
             this.gv_BasicSet = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -224,7 +224,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_BasicSet.CellFocus = true;
             this.gc_BasicSet.EnterYN = true;
-            this.gc_BasicSet.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_BasicSet.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_BasicSet.ExpansionCHK = false;
             this.gc_BasicSet.Location = new System.Drawing.Point(0, 106);
             this.gc_BasicSet.MainView = this.gv_BasicSet;
@@ -288,7 +288,7 @@
         private DevExpress.XtraEditors.TextEdit txt_MenuM_NM;
         private DevExpress.XtraEditors.ButtonEdit txt_MenuM;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private SERP.GridControlEx gc_BasicSet;
+        private MES.GridControlEx gc_BasicSet;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_BasicSet;
         private DevExpress.XtraEditors.LabelControl labelDescription;
         private DevExpress.XtraEditors.LabelControl labelControlTitle;

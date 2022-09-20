@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regSearch
     {
@@ -34,9 +34,9 @@
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Search_M = new SERP.GridControlEx();
+            this.gc_Search_M = new MES.GridControlEx();
             this.gv_Search_M = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gc_Search_S = new SERP.GridControlEx();
+            this.gc_Search_S = new MES.GridControlEx();
             this.gv_Search_S = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -171,7 +171,7 @@
             this.gc_Search_M.CellFocus = true;
             this.gc_Search_M.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Search_M.EnterYN = true;
-            this.gc_Search_M.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Search_M.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Search_M.ExpansionCHK = false;
             this.gc_Search_M.Location = new System.Drawing.Point(0, 0);
             this.gc_Search_M.MainView = this.gv_Search_M;
@@ -202,7 +202,7 @@
             this.gc_Search_S.CellFocus = true;
             this.gc_Search_S.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Search_S.EnterYN = true;
-            this.gc_Search_S.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Search_S.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Search_S.ExpansionCHK = false;
             this.gc_Search_S.Location = new System.Drawing.Point(0, 0);
             this.gc_Search_S.MainView = this.gv_Search_S;

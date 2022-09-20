@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptProcessQcTot
     {
@@ -33,7 +33,7 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gc_MatQcM = new SERP.GridControlEx();
+            this.gc_MatQcM = new MES.GridControlEx();
             this.gv_MatQcM = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.dt_To = new DevExpress.XtraEditors.DateEdit();
@@ -154,7 +154,7 @@
             this.gc_MatQcM.CellFocus = true;
             this.gc_MatQcM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_MatQcM.EnterYN = true;
-            this.gc_MatQcM.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_MatQcM.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_MatQcM.ExpansionCHK = false;
             this.gc_MatQcM.Head_DoubleChk = true;
             this.gc_MatQcM.Location = new System.Drawing.Point(0, 101);

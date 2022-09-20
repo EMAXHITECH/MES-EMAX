@@ -23,7 +23,7 @@ using System.Windows.Media;
 using Color = System.Drawing.Color;
 using DevExpress.Utils;
 
-namespace SERP
+namespace MES
 {
     public partial class MainForm : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
@@ -262,7 +262,7 @@ namespace SERP
 
                 if (!string.IsNullOrWhiteSpace(sNAME) && TreeLevel == 2 && sTEXT != "사용자관리" && sTEXT != "프로그램관리")
                 {
-                    Type type = Type.GetType("SERP." + sNAME);
+                    Type type = Type.GetType("MES." + sNAME);
 
                     if (type != null)
                     {
@@ -830,7 +830,7 @@ namespace SERP
 
             if (!string.IsNullOrWhiteSpace(Jump_Form))
             {
-                Type type = Type.GetType("SERP." + sNAME);
+                Type type = Type.GetType("MES." + sNAME);
 
                 if (type != null)
                 {

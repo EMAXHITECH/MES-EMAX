@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptProcessQc
     {
@@ -33,7 +33,7 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gc_MatQcM = new SERP.GridControlEx();
+            this.gc_MatQcM = new MES.GridControlEx();
             this.gv_MatQcM = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.dt_End = new DevExpress.XtraEditors.DateEdit();
@@ -45,7 +45,7 @@
             this.dt_From = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Bad = new SERP.GridControlEx();
+            this.gc_Bad = new MES.GridControlEx();
             this.gv_Bad = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -165,7 +165,7 @@
             this.gc_MatQcM.CellFocus = true;
             this.gc_MatQcM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_MatQcM.EnterYN = true;
-            this.gc_MatQcM.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_MatQcM.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_MatQcM.ExpansionCHK = false;
             this.gc_MatQcM.Head_DoubleChk = true;
             this.gc_MatQcM.Location = new System.Drawing.Point(0, 0);
@@ -336,7 +336,7 @@
             this.gc_Bad.CellFocus = true;
             this.gc_Bad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Bad.EnterYN = true;
-            this.gc_Bad.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Bad.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Bad.ExpansionCHK = false;
             this.gc_Bad.Head_DoubleChk = true;
             this.gc_Bad.Location = new System.Drawing.Point(0, 0);

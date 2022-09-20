@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class FileForm
     {
@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileForm));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Delete = new SERP.SimpleButtonEx();
+            this.btn_Delete = new MES.SimpleButtonEx();
             this.btn_Upload = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Download = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Close = new SERP.SimpleButtonEx();
+            this.btn_Close = new MES.SimpleButtonEx();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.Grid_File = new SERP.GridControlEx();
+            this.Grid_File = new MES.GridControlEx();
             this.View_File = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -61,7 +61,7 @@
             // 
             this.btn_Delete.Appearance.BackColor = System.Drawing.Color.White;
             this.btn_Delete.Appearance.Options.UseBackColor = true;
-            this.btn_Delete.button_GB = SERP.SimpleButtonEx.Button_GB.Delete;
+            this.btn_Delete.button_GB = MES.SimpleButtonEx.Button_GB.Delete;
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButtonEx1.ImageOptions.SvgImage")));
             this.btn_Delete.Location = new System.Drawing.Point(693, 3);
             this.btn_Delete.Name = "btn_Delete";
@@ -113,7 +113,7 @@
             this.btn_Close.Appearance.Font = new System.Drawing.Font("나눔바른고딕", 11F);
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseFont = true;
-            this.btn_Close.button_GB = SERP.SimpleButtonEx.Button_GB.Exit;
+            this.btn_Close.button_GB = MES.SimpleButtonEx.Button_GB.Exit;
             this.btn_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Close.ImageOptions.SvgImage")));
             this.btn_Close.Location = new System.Drawing.Point(773, 3);
             this.btn_Close.Name = "btn_Close";
@@ -141,7 +141,7 @@
             this.Grid_File.CellFocus = true;
             this.Grid_File.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_File.EnterYN = true;
-            this.Grid_File.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_File.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_File.ExpansionCHK = false;
             this.Grid_File.Location = new System.Drawing.Point(2, 2);
             this.Grid_File.MainView = this.View_File;

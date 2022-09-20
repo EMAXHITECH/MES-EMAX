@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptBBOM
     {
@@ -34,7 +34,7 @@
             this.dpiAwareImageCollection1 = new DevExpress.Utils.DPIAwareImageCollection(this.components);
             this.treeList_Bom = new DevExpress.XtraTreeList.TreeList();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Item = new SERP.GridControlEx();
+            this.gc_Item = new MES.GridControlEx();
             this.gv_Item = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
@@ -172,7 +172,7 @@
             this.gc_Item.CellFocus = true;
             this.gc_Item.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Item.EnterYN = true;
-            this.gc_Item.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Item.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Item.ExpansionCHK = false;
             this.gc_Item.Location = new System.Drawing.Point(0, 0);
             this.gc_Item.MainView = this.gv_Item;

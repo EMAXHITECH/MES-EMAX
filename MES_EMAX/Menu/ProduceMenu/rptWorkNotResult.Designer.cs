@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class rptWorkNotResult
     {
@@ -33,7 +33,7 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gc_MatPoM = new SERP.GridControlEx();
+            this.gc_MatPoM = new MES.GridControlEx();
             this.gv_MatPoM = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.dt_InT = new DevExpress.XtraEditors.DateEdit();
@@ -154,7 +154,7 @@
             this.gc_MatPoM.CellFocus = true;
             this.gc_MatPoM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_MatPoM.EnterYN = false;
-            this.gc_MatPoM.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_MatPoM.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_MatPoM.ExpansionCHK = false;
             this.gc_MatPoM.Head_DoubleChk = true;
             this.gc_MatPoM.Location = new System.Drawing.Point(0, 101);

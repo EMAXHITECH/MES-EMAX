@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
 
-namespace SERP
+namespace MES
 {
     public partial class Exit : DevExpress.XtraEditors.XtraForm
     {

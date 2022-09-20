@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class Login
     {
@@ -124,7 +124,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::SERP.Properties.Resources.Login;
+            this.pictureBox1.Image = global::MES.Properties.Resources.Login;
             this.pictureBox1.Location = new System.Drawing.Point(11, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(387, 72);

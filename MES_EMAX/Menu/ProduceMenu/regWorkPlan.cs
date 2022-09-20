@@ -12,7 +12,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraTreeList.Nodes;
 using DevExpress.XtraTreeList;
 
-namespace SERP
+namespace MES
 {
     public partial class regWorkPlan : BaseReg
     {

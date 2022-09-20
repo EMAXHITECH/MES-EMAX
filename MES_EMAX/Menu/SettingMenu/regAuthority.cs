@@ -14,7 +14,7 @@ using DevExpress.Utils;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
 
-namespace SERP
+namespace MES
 {
     public partial class regAuthority : BaseReg
     {

@@ -13,7 +13,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using DevExpress.Utils;
 
-namespace SERP
+namespace MES
 {
     public partial class PopUserForm : BaseForm
     {
@@ -61,8 +61,8 @@ namespace SERP
 
             if (codes != null)
             {
-                txt_UserPos.Text = codes[0];
-                txt_UserPosNM.Text = codes[1];
+                txt_UMESos.Text = codes[0];
+                txt_UMESosNM.Text = codes[1];
             }
         }
 
@@ -104,8 +104,8 @@ namespace SERP
                 DataRow dr = dt.Rows[0]; //DataRow 써서 작업하기
                 txt_UserCode.Text = dt.Rows[0]["User_Code"].ToString();
                 txt_UserName.Text = dt.Rows[0]["User_Name"].ToString();
-                txt_UserPos.Text = dt.Rows[0]["User_Pos"].ToString();
-                txt_UserPosNM.Text = dt.Rows[0]["User_PosNM"].ToString();
+                txt_UMESos.Text = dt.Rows[0]["User_Pos"].ToString();
+                txt_UMESosNM.Text = dt.Rows[0]["User_PosNM"].ToString();
                 txt_DeptCode.Text = dt.Rows[0]["Dept_Code"].ToString();
                 txt_DeptNM.Text = dt.Rows[0]["Dept_Name"].ToString();
                 dt_InDate.Text = dt.Rows[0]["In_Date"].ToString();
@@ -127,8 +127,8 @@ namespace SERP
             {
                 txt_UserCode.Text = "";
                 txt_UserName.Text = "";
-                txt_UserPos.Text = "";
-                txt_UserPosNM.Text = "";
+                txt_UMESos.Text = "";
+                txt_UMESosNM.Text = "";
                 txt_DeptCode.Text = "";
                 txt_DeptNM.Text = "";
                 dt_InDate.Text = DateTime.Today.ToString("yyyy-MM-dd");
@@ -190,30 +190,30 @@ namespace SERP
             txt_DeptNM.Text = PopHelpForm.Return_Help("sp_Help_Dept", txt_DeptCode.Text);
         }
 
-        private void txt_UserPos_Properties_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        private void txt_UMESos_Properties_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txt_UserPosNM.Text))
+            if (string.IsNullOrWhiteSpace(txt_UMESosNM.Text))
             {
-                PopHelpForm HelpForm = new PopHelpForm("General", "sp_Help_General", "10010", txt_UserPos.Text, "N");
+                PopHelpForm HelpForm = new PopHelpForm("General", "sp_Help_General", "10010", txt_UMESos.Text, "N");
 
                 if (HelpForm.ShowDialog() == DialogResult.OK)
                 {
-                    txt_UserPos.Text = HelpForm.sRtCode;
-                    txt_UserPosNM.Text = HelpForm.sRtCodeNm;
+                    txt_UMESos.Text = HelpForm.sRtCode;
+                    txt_UMESosNM.Text = HelpForm.sRtCodeNm;
                 }
             }
         }
 
-        private void txt_UserPos_EditValueChanged(object sender, EventArgs e)
+        private void txt_UMESos_EditValueChanged(object sender, EventArgs e)
         {
-            txt_UserPosNM.Text = PopHelpForm.Return_Help("sp_Help_General", txt_UserPos.Text, "10010");
+            txt_UMESosNM.Text = PopHelpForm.Return_Help("sp_Help_General", txt_UMESos.Text, "10010");
         }
 
-        private void txt_UserPos_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_UMESos_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == 13)
             {
-                txt_UserPos_Properties_ButtonClick(sender, null);
+                txt_UMESos_Properties_ButtonClick(sender, null);
             }
         }
 
@@ -272,7 +272,7 @@ namespace SERP
                 sp.AddParam("User_Code", txt_UserCode.Text);
                 sp.AddParam("User_Name", txt_UserName.Text);
                 sp.AddParam("Dept_Code", txt_DeptCode.Text);
-                sp.AddParam("User_Pos", txt_UserPos.Text);
+                sp.AddParam("User_Pos", txt_UMESos.Text);
                 sp.AddParam("In_Date", dt_InDate.DateTime.ToString("yyyyMMdd"));
                 sp.AddParam("Pwd", sUpdate == "Y" ? (txt_PWD.Text == "1234" ? sPWD : SHA256Hash(txt_PWD.Text)) : SHA256Hash(txt_PWD.Text));// 비밀번호 변경시 새 암호화 처리
                 sp.AddParam("Tel_No", txt_TelNo.Text);
@@ -366,7 +366,7 @@ namespace SERP
                 return false;
             }
 
-            if(txt_UserPos.Text != "" && txt_UserPosNM.Text == "")
+            if(txt_UMESos.Text != "" && txt_UMESosNM.Text == "")
             {
                 XtraMessageBox.Show("직책 코드가 잘못 입력되어있습니다");
                 return false;

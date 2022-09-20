@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regQcSet
     {
@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regQcSet));
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_Qc = new SERP.GridControlEx();
+            this.gc_Qc = new MES.GridControlEx();
             this.gv_Qc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_QcPart = new SERP.GridControlEx();
+            this.gc_QcPart = new MES.GridControlEx();
             this.gv_QcPart = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -160,7 +160,7 @@
             this.gc_Qc.CellFocus = true;
             this.gc_Qc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Qc.EnterYN = true;
-            this.gc_Qc.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Qc.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Qc.ExpansionCHK = false;
             this.gc_Qc.Head_DoubleChk = true;
             this.gc_Qc.Location = new System.Drawing.Point(2, 2);
@@ -208,7 +208,7 @@
             this.gc_QcPart.CellFocus = true;
             this.gc_QcPart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_QcPart.EnterYN = true;
-            this.gc_QcPart.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_QcPart.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_QcPart.ExpansionCHK = false;
             this.gc_QcPart.Head_DoubleChk = true;
             this.gc_QcPart.Location = new System.Drawing.Point(2, 2);

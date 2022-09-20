@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regGeneral
     {
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regGeneral));
-            this.gc_GeneralH = new SERP.GridControlEx();
+            this.gc_GeneralH = new MES.GridControlEx();
             this.gv_GeneralH = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_GeneralD = new SERP.GridControlEx();
+            this.gc_GeneralD = new MES.GridControlEx();
             this.gv_GeneralD = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -128,7 +128,7 @@
             this.gc_GeneralH.CellFocus = true;
             this.gc_GeneralH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_GeneralH.EnterYN = true;
-            this.gc_GeneralH.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_GeneralH.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_GeneralH.ExpansionCHK = false;
             this.gc_GeneralH.Location = new System.Drawing.Point(0, 0);
             this.gc_GeneralH.MainView = this.gv_GeneralH;
@@ -183,7 +183,7 @@
             this.gc_GeneralD.CellFocus = true;
             this.gc_GeneralD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_GeneralD.EnterYN = true;
-            this.gc_GeneralD.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_GeneralD.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_GeneralD.ExpansionCHK = false;
             this.gc_GeneralD.Location = new System.Drawing.Point(0, 0);
             this.gc_GeneralD.MainView = this.gv_GeneralD;
@@ -243,10 +243,10 @@
         }
 
         #endregion
-        private SERP.GridControlEx gc_GeneralH;
+        private MES.GridControlEx gc_GeneralH;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_GeneralH;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private SERP.GridControlEx gc_GeneralD;
+        private MES.GridControlEx gc_GeneralD;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_GeneralD;
     }
 }

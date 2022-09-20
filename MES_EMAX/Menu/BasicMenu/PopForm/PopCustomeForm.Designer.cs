@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class PopCustomeForm
     {
@@ -32,10 +32,10 @@
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.label_Name = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.btn_Delete = new SERP.SimpleButtonEx();
-            this.btn_Save = new SERP.SimpleButtonEx();
-            this.btn_Close = new SERP.SimpleButtonEx();
-            this.btn_Insert = new SERP.SimpleButtonEx();
+            this.btn_Delete = new MES.SimpleButtonEx();
+            this.btn_Save = new MES.SimpleButtonEx();
+            this.btn_Close = new MES.SimpleButtonEx();
+            this.btn_Insert = new MES.SimpleButtonEx();
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.txt_UpUser = new DevExpress.XtraEditors.TextEdit();
             this.txt_RegUser = new DevExpress.XtraEditors.TextEdit();
@@ -101,7 +101,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.TabPage_1 = new DevExpress.XtraTab.XtraTabPage();
-            this.Grid_User = new SERP.GridControlEx();
+            this.Grid_User = new MES.GridControlEx();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.View_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.XtraTabControl = new DevExpress.XtraTab.XtraTabControl();
@@ -195,7 +195,7 @@
             this.btn_Delete.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Delete.Appearance.Options.UseBackColor = true;
             this.btn_Delete.Appearance.Options.UseBorderColor = true;
-            this.btn_Delete.button_GB = SERP.SimpleButtonEx.Button_GB.Delete;
+            this.btn_Delete.button_GB = MES.SimpleButtonEx.Button_GB.Delete;
             this.btn_Delete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Delete.ImageOptions.SvgImage")));
             this.btn_Delete.Location = new System.Drawing.Point(83, 4);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -215,7 +215,7 @@
             this.btn_Save.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(85)))), ((int)(((byte)(117)))));
             this.btn_Save.Appearance.Options.UseBackColor = true;
             this.btn_Save.Appearance.Options.UseBorderColor = true;
-            this.btn_Save.button_GB = SERP.SimpleButtonEx.Button_GB.Save;
+            this.btn_Save.button_GB = MES.SimpleButtonEx.Button_GB.Save;
             this.btn_Save.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Save.ImageOptions.SvgImage")));
             this.btn_Save.Location = new System.Drawing.Point(161, 4);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -235,7 +235,7 @@
             this.btn_Close.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
-            this.btn_Close.button_GB = SERP.SimpleButtonEx.Button_GB.Exit;
+            this.btn_Close.button_GB = MES.SimpleButtonEx.Button_GB.Exit;
             this.btn_Close.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Close.ImageOptions.Image")));
             this.btn_Close.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Close.ImageOptions.SvgImage")));
             this.btn_Close.Location = new System.Drawing.Point(240, 4);
@@ -256,7 +256,7 @@
             this.btn_Insert.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Insert.Appearance.Options.UseBackColor = true;
             this.btn_Insert.Appearance.Options.UseBorderColor = true;
-            this.btn_Insert.button_GB = SERP.SimpleButtonEx.Button_GB.Add;
+            this.btn_Insert.button_GB = MES.SimpleButtonEx.Button_GB.Add;
             this.btn_Insert.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Insert.ImageOptions.SvgImage")));
             this.btn_Insert.Location = new System.Drawing.Point(5, 4);
             this.btn_Insert.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1122,7 +1122,7 @@
             this.Grid_User.CellFocus = true;
             this.Grid_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_User.EnterYN = true;
-            this.Grid_User.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.Grid_User.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.Grid_User.ExpansionCHK = false;
             this.Grid_User.Head_DoubleChk = true;
             this.Grid_User.Location = new System.Drawing.Point(0, 0);
@@ -1234,10 +1234,10 @@
         #endregion
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private SERP.SimpleButtonEx btn_Insert;
-        private SERP.SimpleButtonEx btn_Close;
-        private SERP.SimpleButtonEx btn_Save;
-        private SERP.SimpleButtonEx btn_Delete;
+        private MES.SimpleButtonEx btn_Insert;
+        private MES.SimpleButtonEx btn_Close;
+        private MES.SimpleButtonEx btn_Save;
+        private MES.SimpleButtonEx btn_Delete;
         private DevExpress.XtraEditors.PanelControl panel_H;
         private DevExpress.XtraEditors.TextEdit txt_UpUser;
         private DevExpress.XtraEditors.TextEdit txt_RegUser;

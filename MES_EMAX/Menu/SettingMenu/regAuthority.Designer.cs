@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regAuthority
     {
@@ -34,15 +34,15 @@
             this.txt_DeptNM = new DevExpress.XtraEditors.TextEdit();
             this.txt_DeptCode = new DevExpress.XtraEditors.ButtonEdit();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.Grid_User = new SERP.GridControlEx();
+            this.Grid_User = new MES.GridControlEx();
             this.View_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.Grid_Menu_M = new SERP.GridControlEx();
+            this.Grid_Menu_M = new MES.GridControlEx();
             this.View_Menu_M = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.Grid_Menu_S = new SERP.GridControlEx();
+            this.Grid_Menu_S = new MES.GridControlEx();
             this.View_Menu_S = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_Copy = new SERP.SimpleButtonEx();
+            this.btn_Copy = new MES.SimpleButtonEx();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panButton)).BeginInit();
@@ -225,7 +225,7 @@
             this.Grid_User.CellFocus = true;
             this.Grid_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_User.EnterYN = true;
-            this.Grid_User.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_User.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_User.ExpansionCHK = false;
             this.Grid_User.Location = new System.Drawing.Point(0, 0);
             this.Grid_User.MainView = this.View_User;
@@ -275,7 +275,7 @@
             this.Grid_Menu_M.CellFocus = true;
             this.Grid_Menu_M.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Menu_M.EnterYN = true;
-            this.Grid_Menu_M.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_Menu_M.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_Menu_M.ExpansionCHK = false;
             this.Grid_Menu_M.Location = new System.Drawing.Point(0, 0);
             this.Grid_Menu_M.MainView = this.View_Menu_M;
@@ -305,7 +305,7 @@
             this.Grid_Menu_S.CellFocus = true;
             this.Grid_Menu_S.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid_Menu_S.EnterYN = true;
-            this.Grid_Menu_S.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.Grid_Menu_S.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.Grid_Menu_S.ExpansionCHK = false;
             this.Grid_Menu_S.Location = new System.Drawing.Point(0, 0);
             this.Grid_Menu_S.MainView = this.View_Menu_S;
@@ -352,7 +352,7 @@
             this.btn_Copy.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Copy.Appearance.Options.UseBackColor = true;
             this.btn_Copy.Appearance.Options.UseBorderColor = true;
-            this.btn_Copy.button_GB = SERP.SimpleButtonEx.Button_GB.Copy;
+            this.btn_Copy.button_GB = MES.SimpleButtonEx.Button_GB.Copy;
             this.btn_Copy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Copy.ImageOptions.SvgImage")));
             this.btn_Copy.Location = new System.Drawing.Point(150, 43);
             this.btn_Copy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

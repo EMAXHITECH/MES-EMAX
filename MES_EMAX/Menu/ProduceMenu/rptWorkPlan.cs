@@ -12,7 +12,7 @@ using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid;
 using DevExpress.XtraTreeList;
 
-namespace SERP
+namespace MES
 {
     public partial class rptWorkPlan : BaseReg
     {

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regProcessQc
     {
@@ -42,17 +42,17 @@
             this.dt_FResult = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_Qc = new SERP.GridControlEx();
+            this.gc_Qc = new MES.GridControlEx();
             this.gv_Qc = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.Tab_Bad = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_Bad = new SERP.GridControlEx();
+            this.gc_Bad = new MES.GridControlEx();
             this.gv_Bad = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Tab_Value = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_Value = new SERP.GridControlEx();
+            this.gc_Value = new MES.GridControlEx();
             this.gv_Value = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -334,7 +334,7 @@
             this.gc_Qc.CellFocus = true;
             this.gc_Qc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Qc.EnterYN = true;
-            this.gc_Qc.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Qc.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Qc.ExpansionCHK = false;
             this.gc_Qc.Head_DoubleChk = true;
             this.gc_Qc.Location = new System.Drawing.Point(2, 2);
@@ -419,7 +419,7 @@
             this.gc_Bad.CellFocus = true;
             this.gc_Bad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Bad.EnterYN = true;
-            this.gc_Bad.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Bad.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Bad.ExpansionCHK = false;
             this.gc_Bad.Head_DoubleChk = true;
             this.gc_Bad.Location = new System.Drawing.Point(2, 2);
@@ -471,7 +471,7 @@
             this.gc_Value.CellFocus = true;
             this.gc_Value.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Value.EnterYN = true;
-            this.gc_Value.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Value.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Value.ExpansionCHK = false;
             this.gc_Value.Head_DoubleChk = true;
             this.gc_Value.Location = new System.Drawing.Point(2, 2);

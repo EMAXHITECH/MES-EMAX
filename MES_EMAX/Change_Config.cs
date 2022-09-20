@@ -9,7 +9,7 @@ using DevExpress.XtraSplashScreen;
 using System.Security.Cryptography;
 using System.Drawing.Text;
 using System.IO;
-using SERP.Properties;
+using MES.Properties;
 using System.Net;
 using System.Reflection;
 using System.Diagnostics;
@@ -19,7 +19,7 @@ using System.Threading;
 using DevExpress.XtraEditors;
 using System.Data.SqlClient;
 
-namespace SERP
+namespace MES
 {
     public partial class Change_Config : DevExpress.XtraEditors.XtraForm
     {

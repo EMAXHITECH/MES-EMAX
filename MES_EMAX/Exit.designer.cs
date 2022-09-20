@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class Exit
     {
@@ -112,7 +112,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::SERP.Properties.Resources.Application_Exit;
+            this.pictureBox1.BackgroundImage = global::MES.Properties.Resources.Application_Exit;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
             this.pictureBox1.Name = "pictureBox1";

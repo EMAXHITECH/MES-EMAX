@@ -15,7 +15,7 @@ using DevExpress.Utils;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid.Views.Base;
 
-namespace SERP
+namespace MES
 {
     public class GridControlEx : GridControl
     {

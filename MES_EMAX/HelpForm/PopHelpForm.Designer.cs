@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class PopHelpForm
     {
@@ -35,7 +35,7 @@
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.btn_Select = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Close = new DevExpress.XtraEditors.SimpleButton();
-            this.gc_Help = new SERP.GridControlEx();
+            this.gc_Help = new MES.GridControlEx();
             this.gv_Help = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -123,7 +123,7 @@
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
             this.btn_Close.Appearance.Options.UseForeColor = true;
-            this.btn_Close.ImageOptions.SvgImage = global::SERP.Properties.Resources.actions_deletecircled;
+            this.btn_Close.ImageOptions.SvgImage = global::MES.Properties.Resources.actions_deletecircled;
             this.btn_Close.Location = new System.Drawing.Point(171, 4);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Close.Name = "btn_Close";
@@ -140,7 +140,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gc_Help.CellFocus = false;
             this.gc_Help.EnterYN = false;
-            this.gc_Help.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Help.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Help.ExpansionCHK = false;
             this.gc_Help.Head_DoubleChk = true;
             this.gc_Help.Location = new System.Drawing.Point(3, 56);

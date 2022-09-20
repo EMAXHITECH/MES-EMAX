@@ -16,7 +16,7 @@ using DevExpress.DashboardCommon.Native;
 using DevExpress.XtraEditors.Controls;
 using System.Data.SqlClient;
 
-namespace SERP
+namespace MES
 {
     public class CommonUserControl : DevExpress.XtraEditors.XtraUserControl
     {

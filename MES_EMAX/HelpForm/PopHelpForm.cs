@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Controls;
 
-namespace SERP
+namespace MES
 {
     public partial class PopHelpForm : XtraForm
     {

@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regWork
     {
@@ -35,12 +35,12 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.dt_WorkDate = new DevExpress.XtraEditors.DateEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.gc_Work = new SERP.GridControlEx();
+            this.gc_Work = new MES.GridControlEx();
             this.gv_Work = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.gc_BOM = new SERP.GridControlEx();
+            this.gc_BOM = new MES.GridControlEx();
             this.gv_BOM = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -229,7 +229,7 @@
             this.gc_Work.CellFocus = true;
             this.gc_Work.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Work.EnterYN = true;
-            this.gc_Work.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_Work.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_Work.ExpansionCHK = false;
             this.gc_Work.Head_DoubleChk = true;
             this.gc_Work.Location = new System.Drawing.Point(2, 2);
@@ -302,7 +302,7 @@
             this.gc_BOM.CellFocus = true;
             this.gc_BOM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_BOM.EnterYN = true;
-            this.gc_BOM.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_BOM.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_BOM.ExpansionCHK = false;
             this.gc_BOM.Head_DoubleChk = true;
             this.gc_BOM.Location = new System.Drawing.Point(2, 2);

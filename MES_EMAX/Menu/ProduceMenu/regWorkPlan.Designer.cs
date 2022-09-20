@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regWorkPlan
     {
@@ -64,10 +64,10 @@
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.TabControl_Plan = new DevExpress.XtraTab.XtraTabControl();
             this.tab_Rout = new DevExpress.XtraTab.XtraTabPage();
-            this.gc_Rout = new SERP.GridControlEx();
+            this.gc_Rout = new MES.GridControlEx();
             this.gv_Rout = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tab_Bom = new DevExpress.XtraTab.XtraTabPage();
-            this.gc_Bom = new SERP.GridControlEx();
+            this.gc_Bom = new MES.GridControlEx();
             this.gv_Bom = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -591,7 +591,7 @@
             this.gc_Rout.CellFocus = true;
             this.gc_Rout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Rout.EnterYN = true;
-            this.gc_Rout.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_Rout.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_Rout.ExpansionCHK = false;
             this.gc_Rout.Head_DoubleChk = true;
             this.gc_Rout.Location = new System.Drawing.Point(0, 0);
@@ -633,7 +633,7 @@
             this.gc_Bom.CellFocus = true;
             this.gc_Bom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Bom.EnterYN = true;
-            this.gc_Bom.Execl_GB = SERP.GridControlEx.Excel_GB.Append;
+            this.gc_Bom.Execl_GB = MES.GridControlEx.Excel_GB.Append;
             this.gc_Bom.ExpansionCHK = false;
             this.gc_Bom.Head_DoubleChk = true;
             this.gc_Bom.Location = new System.Drawing.Point(0, 0);

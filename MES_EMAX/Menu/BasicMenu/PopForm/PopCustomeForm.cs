@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 
-namespace SERP
+namespace MES
 {
     public partial class PopCustomeForm : BaseForm
     {

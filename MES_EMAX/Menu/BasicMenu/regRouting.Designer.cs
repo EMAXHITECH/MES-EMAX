@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regRouting
     {
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regRouting));
-            this.gc_Rout = new SERP.GridControlEx();
+            this.gc_Rout = new MES.GridControlEx();
             this.gv_Rout = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Item = new SERP.GridControlEx();
+            this.gc_Item = new MES.GridControlEx();
             this.gv_Item = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.btn_Copy = new SERP.SimpleButtonEx();
+            this.btn_Copy = new MES.SimpleButtonEx();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -137,7 +137,7 @@
             this.gc_Rout.CellFocus = true;
             this.gc_Rout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Rout.EnterYN = true;
-            this.gc_Rout.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Rout.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Rout.ExpansionCHK = false;
             this.gc_Rout.Location = new System.Drawing.Point(0, 27);
             this.gc_Rout.MainView = this.gv_Rout;
@@ -194,7 +194,7 @@
             this.gc_Item.CellFocus = true;
             this.gc_Item.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Item.EnterYN = true;
-            this.gc_Item.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Item.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Item.ExpansionCHK = false;
             this.gc_Item.Location = new System.Drawing.Point(0, 0);
             this.gc_Item.MainView = this.gv_Item;
@@ -247,7 +247,7 @@
             this.btn_Copy.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_Copy.Appearance.Options.UseBackColor = true;
             this.btn_Copy.Appearance.Options.UseBorderColor = true;
-            this.btn_Copy.button_GB = SERP.SimpleButtonEx.Button_GB.Copy;
+            this.btn_Copy.button_GB = MES.SimpleButtonEx.Button_GB.Copy;
             this.btn_Copy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_Copy.ImageOptions.SvgImage")));
             this.btn_Copy.Location = new System.Drawing.Point(-402, 124);
             this.btn_Copy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
