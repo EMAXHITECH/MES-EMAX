@@ -144,25 +144,25 @@ namespace MES
 
         private void ViewMaster_DoubleClick(object sender, EventArgs e)
         {
-            int iRow = ViewMaster.FocusedRowHandle;
+            //int iRow = ViewMaster.FocusedRowHandle;
 
-            if (iRow < 0)
-                return;
-            try
-            {
-                //byte[] sImage = (byte[])ViewMaster.GetRowCellValue(iRow, "Eq_Image");
+            //if (iRow < 0)
+            //    return;
+            //try
+            //{
+            //    //byte[] sImage = (byte[])ViewMaster.GetRowCellValue(iRow, "Eq_Image");
 
-                //if (sImage == null)
-                //    return;
+            //    //if (sImage == null)
+            //    //    return;
 
-                //PopEquipImageForm Img_Form = new PopEquipImageForm(sImage);
-                //Img_Form.StartPosition = FormStartPosition.CenterParent;
-                //Img_Form.ShowDialog();
-            }
-            catch (Exception)
-            {
+            //    //PopEquipImageForm Img_Form = new PopEquipImageForm(sImage);
+            //    //Img_Form.StartPosition = FormStartPosition.CenterParent;
+            //    //Img_Form.ShowDialog();
+            //}
+            //catch (Exception)
+            //{
 
-            }
+            //}
         }
 
         private void ViewMaster_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
