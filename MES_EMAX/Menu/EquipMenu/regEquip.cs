@@ -12,7 +12,7 @@ using DevExpress.XtraEditors.Repository;
 using System.IO;
 using System.Net;
 
-namespace SERP
+namespace MES
 {
     public partial class regEquip : BaseReg
     {
@@ -93,13 +93,13 @@ namespace SERP
 
                 if (!string.IsNullOrWhiteSpace(txt_EquipCode.Text))
                 {
-                    DataTable Table = FileIF.Get_File_List(GlobalValue.Basic_URL + this.Name);
+                    DataTable Table = FileIF.Get_File_List(this.Name);
 
                     DataRow[] Rows = (Table == null) ? null : Table.Select("File_Name LIKE '" + txt_EquipCode.Text + "%'");
 
                     if (Rows != null && Rows.Count() > 0)
                     {
-                        string Path = GlobalValue.Basic_URL + this.Name + "/" + Rows[0]["File_Name"].NullString();
+                        string Path = this.Name + "/" + Rows[0]["File_Name"].NullString();
                         pictureEdit_Equip.Image = FileIF.FTP_Download_Image(Path);
                         pictureEdit_Equip.ToolTip = Path;
                     }
@@ -243,9 +243,9 @@ namespace SERP
                         {
                             string File_Name = pictureEdit_Equip.ToolTip.Substring(pictureEdit_Equip.ToolTip.LastIndexOf("\\") + 1, pictureEdit_Equip.ToolTip.Length - pictureEdit_Equip.ToolTip.LastIndexOf("\\") - 1);
 
-                            FileIF.FTP_Directory(GlobalValue.Basic_URL + this.Name);
+                            //FileIF.FTP_Directory(GlobalValue.Basic_URL + this.Name);
 
-                            FileIF.FTP_Upload_File(pictureEdit_Equip.ToolTip, GlobalValue.Basic_URL + this.Name + "/" + txt_EquipCode.Text + File_Name.Substring(File_Name.LastIndexOf("."), File_Name.Length - File_Name.LastIndexOf(".")));
+                            //FileIF.FTP_Upload_File(pictureEdit_Equip.ToolTip, GlobalValue.Basic_URL + this.Name + "/" + txt_EquipCode.Text + File_Name.Substring(File_Name.LastIndexOf("."), File_Name.Length - File_Name.LastIndexOf(".")));
                         }
                     }
                     else if (pictureEdit_Equip.Image == null)
