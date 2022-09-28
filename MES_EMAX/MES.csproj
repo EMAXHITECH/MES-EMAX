@@ -300,6 +300,18 @@
     <Compile Include="Menu\BasicMenu\rptFBOM.Designer.cs">
       <DependentUpon>rptFBOM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\EquipMenu\regEquip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\EquipMenu\regEquip.Designer.cs">
+      <DependentUpon>regEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\EquipMenu\rptEquip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\EquipMenu\rptEquip.Designer.cs">
+      <DependentUpon>rptEquip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\ProduceMenu\regProcessQc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -545,6 +557,12 @@
     <EmbeddedResource Include="Menu\BasicMenu\rptFBOM.resx">
       <DependentUpon>rptFBOM.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\EquipMenu\regEquip.resx">
+      <DependentUpon>regEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\EquipMenu\rptEquip.resx">
+      <DependentUpon>rptEquip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\ProduceMenu\regProcessQc.resx">
       <DependentUpon>regProcessQc.cs</DependentUpon>

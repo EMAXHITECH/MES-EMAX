@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regEquip
     {
@@ -529,7 +529,7 @@
             this.pictureEdit_Equip.Name = "pictureEdit_Equip";
             this.pictureEdit_Equip.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(249)))), ((int)(((byte)(252)))));
             this.pictureEdit_Equip.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit_Equip.Properties.InitialImageOptions.Image = global::SERP.Properties.Resources.photo;
+            this.pictureEdit_Equip.Properties.InitialImageOptions.Image = global::MES.Properties.Resources.photo;
             this.pictureEdit_Equip.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit_Equip.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit_Equip.ShowToolTips = false;
