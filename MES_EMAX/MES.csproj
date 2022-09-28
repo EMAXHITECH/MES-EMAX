@@ -651,12 +651,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Log\Log.csproj">
-      <Project>{0f7cf4e8-5210-49b7-b644-52cc6547e251}</Project>
-      <Name>Log</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6%28x86 및 x64%29</ProductName>
