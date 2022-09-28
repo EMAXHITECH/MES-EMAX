@@ -23,7 +23,6 @@ namespace MES
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
         public static string log_no { get; private set; }
-        Log.Log_text log = new Log.Log_text();
         ReturnStruct ret = new ReturnStruct();
         
         public Login()
@@ -150,8 +149,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log("화면 : " +this.Name + "\n"  + ex.StackTrace + "\n" + ex.Message);
-
             }
         }
 
@@ -190,7 +187,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log("화면 : " + this.Name + "\n" + ex.StackTrace + "\n" + ex.Message);
                 return false;
             }
         }
@@ -247,7 +243,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(ex.Message);
             }
         }
 

@@ -6,7 +6,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using Log;
 using System.Diagnostics;
 using System.Reflection;
 using System.Drawing.Text;
@@ -29,7 +28,6 @@ namespace MES
     {
         bool bFlyPop = false;
         int notice_count = 0;
-        Log.Log_text log = new Log_text();
         static PrivateFontCollection privateFonts = new PrivateFontCollection();
         List<UserControl> Form_ = new List<UserControl>();
         ReturnStruct ret = new ReturnStruct();
@@ -97,7 +95,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(this.Name + " / " + a + "//" + ex.Message);
             }
         }
 
@@ -399,7 +396,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(this.Name + " / " + ex.Message);
             }
         }
 
@@ -425,7 +421,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(this.Name + " / " + ex.Message);
             }
         }
 
@@ -709,7 +704,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(this.Name + " / " + ex.Message);
             }
         }
 
@@ -734,7 +728,6 @@ namespace MES
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message);
-                log.Log(this.Name + " / " + ex.Message);
             }
         }
 

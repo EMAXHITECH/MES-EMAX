@@ -14,8 +14,6 @@ namespace MES
 {
     public partial class Exit : DevExpress.XtraEditors.XtraForm
     {
-        Log.Log_text log = new Log.Log_text();
-        //Log.Log_text Log = new Log_text();// null;
         public delegate void TextEventHandler(bool sendstring);
         //이벤트 생성
         public event TextEventHandler FormSendEvent;
@@ -45,7 +43,7 @@ namespace MES
             catch (Exception ex)
             {
 
-                //Log.Log(ex.Message);
+                
             }
         }
 

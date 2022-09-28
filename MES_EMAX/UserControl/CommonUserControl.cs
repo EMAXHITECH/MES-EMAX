@@ -22,7 +22,6 @@ namespace MES
     {
         //protected bool IsArrowNavi = false;
         public bool IsArrowNavi = true; //modified on 2020.07.15
-        public Log.Log_text log = new Log.Log_text();
 
         public event TabClosingEventHandler TabClosing;
         public void FireFormClosing(TabClosingEventArgs e)
