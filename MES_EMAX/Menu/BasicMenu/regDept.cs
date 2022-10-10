@@ -39,7 +39,7 @@ namespace MES
             DbHelp.GridSet(GridDept, ViewDept, "Dept_Parent_Name", "상위부서", "100", false, false, true);
             DbHelp.GridSet(GridDept, ViewDept, "Dept_Parent", "상위부서코드", "80", false, false, false);
             DbHelp.GridSet(GridDept, ViewDept, "Custom_Name", "작업처", "100", false, false, true);
-            DbHelp.GridSet(GridDept, ViewDept, "Use_Ck", "사용유무", "80", false, false, true);
+            DbHelp.GridSet(GridDept, ViewDept, "Use_Ck", "사용유무", "70", false, false, true);
 
             DbHelp.GridColumn_CheckBox(ViewDept, "Use_Ck");
 
