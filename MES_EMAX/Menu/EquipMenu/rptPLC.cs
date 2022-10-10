@@ -33,7 +33,7 @@ namespace MES
             dt_F.DateTime = DateTime.Today.AddDays(-1);
             dt_T.DateTime = DateTime.Today;
 
-            btn_Select_Click(null, null);
+            btn_Select_Click(null, null); 
         }
 
         private void Grid_Set()
