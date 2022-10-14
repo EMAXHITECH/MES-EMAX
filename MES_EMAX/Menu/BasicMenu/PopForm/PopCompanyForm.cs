@@ -51,7 +51,7 @@ namespace MES
                             {
                                 row[col] = "";
                             }
-                        }
+                        }   
                     }
 
                     txt_CompanyCode.Text = row["Company_Code"].NullString();
