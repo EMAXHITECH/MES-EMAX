@@ -79,7 +79,7 @@ namespace MES
                 SqlParam sp = new SqlParam("sp_regRouting");
                 sp.AddParam("Kind", "C");
                 sp.AddParam("Item_Code", sItem_Code);
-                sp.AddParam("CopyItem", sCopyItem);
+                sp.AddParam("CopyItem", sCopyItem); 
 
                 ret = DbHelp.Proc_Save(sp);
 
