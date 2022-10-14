@@ -39,13 +39,13 @@ namespace MES
         private void Grid_Set()
         {
             DbHelp.GridSet(Grid_Items, View_Items, "Check_Box", "Check", "50", false, true, true);
-            DbHelp.GridSet(Grid_Items, View_Items, "Bom_Chk", "등록여부", "100", false, false, true);
+            DbHelp.GridSet(Grid_Items, View_Items, "Bom_Chk", "등록여부", "100", false, false, true); 
             DbHelp.GridSet(Grid_Items, View_Items, "Item_Code", "품목코드", "100", false, false, true);
             DbHelp.GridSet(Grid_Items, View_Items, "Item_Name", "품목명", "100", false, false, true);
             DbHelp.GridSet(Grid_Items, View_Items, "Ssize", "규격", "100", false, false, true);
             DbHelp.GridSet(Grid_Items, View_Items, "Q_UnitNM", "단위", "100", false, false, true);
             DbHelp.GridSet(Grid_Items, View_Items, "BPart", "품목구분", "100", false, false, true);
-            DbHelp.GridSet(Grid_Items, View_Items, "Part", "품목그룹", "100", false, false, true);
+            DbHelp.GridSet(Grid_Items, View_Items, "Part", "품목그룹", "100", false, false, true); 
 
             DbHelp.GridColumn_CheckBox(View_Items, "Check_Box");
         }
