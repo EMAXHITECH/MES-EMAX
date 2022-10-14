@@ -45,6 +45,7 @@ namespace MES
             DbHelp.GridSet(gc_Item, gv_Item, "Stock_Qty", "안전재고", "80", false, false, true);
             DbHelp.GridSet(gc_Item, gv_Item, "Qc_KindNM", "검사유형", "100", false, false, true);
             DbHelp.GridSet(gc_Item, gv_Item, "Qc_PartNM", "검사구분", "100", false, false, true);
+            DbHelp.GridSet(gc_Item, gv_Item, "Qc_PartCode", "검사구분", "100", false, false, false);
             DbHelp.GridSet(gc_Item, gv_Item, "Lead_Time", "리드타임 ", "100", false, false, true);
             DbHelp.GridSet(gc_Item, gv_Item, "Use_Ck", "사용유무", "80", false, false, true);
             DbHelp.GridSet(gc_Item, gv_Item, "Item_Image", "이미지", "100", false, false, true);
