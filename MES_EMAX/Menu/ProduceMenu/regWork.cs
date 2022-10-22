@@ -85,7 +85,7 @@ namespace MES
 
             gv_Work.OptionsView.ShowAutoFilterRow = false;
 
-            gv_Work.OptionsCustomization.AllowSort = false;
+            gv_Work.OptionsCustomization.AllowSort = false; 
 
             //BOM 정보 그리드
             gc_BOM.AddRowYN = false;
