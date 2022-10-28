@@ -61,6 +61,7 @@ namespace MES
             DbHelp.GridSet(gc_BOM, gv_BOM, "Loss_Per", "Loss", "80", true, true, true, true);
             DbHelp.GridSet(gc_BOM, gv_BOM, "Real_Qty", "실소요량", "80", true, true, true, true);
             DbHelp.GridSet(gc_BOM, gv_BOM, "Bom_Bigo", "비고", "150", false, true, true, true);
+            DbHelp.GridSet(gc_BOM, gv_BOM, "Use_Ck", "사용여부", "80", false, true, true, true);
 
             DbHelp.GridColumn_NumSet(gv_BOM, "Qty", ForMat.SetDecimal(this.Name, "Qty1"));
             DbHelp.GridColumn_NumSet(gv_BOM, "Loss_Per", ForMat.SetDecimal(this.Name, "Qty1"));
