@@ -31,7 +31,7 @@ namespace MES
             this.btn_Excel.Click += btn_Excel_Click;
             this.btn_Close.Click += btn_Close_Click;
             Grid_Set();
-
+             
             btn_Select_Click(null, null);
         }
 
