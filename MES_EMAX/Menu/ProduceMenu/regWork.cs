@@ -475,9 +475,12 @@ namespace MES
                 Search_Rout(e.Value.ToString(), e.RowHandle);
             }
 
-            gv_Work.CellValueChanged -= new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gv_Work_CellValueChanged);
-            gv_Work.SetRowCellValue(e.RowHandle, "Check", "Y");
-            gv_Work.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gv_Work_CellValueChanged);
+            if(e.Column.FieldName != "Check")
+            {
+                gv_Work.CellValueChanged -= new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gv_Work_CellValueChanged);
+                gv_Work.SetRowCellValue(e.RowHandle, "Check", "Y");
+                gv_Work.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gv_Work_CellValueChanged);
+            }
 
             btn_Insert.sUpdate = "Y";
             btn_Close.sUpdate = "Y";
