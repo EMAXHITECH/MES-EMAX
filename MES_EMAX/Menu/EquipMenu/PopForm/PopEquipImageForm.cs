@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.IO;
 
-namespace SERP
+namespace MES
 {
     public partial class PopEquipImageForm : BaseForm
     {

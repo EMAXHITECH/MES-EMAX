@@ -1,4 +1,4 @@
-﻿namespace SERP
+﻿namespace MES
 {
     partial class regEquipDay
     {
@@ -32,7 +32,7 @@
             this.panel_H = new DevExpress.XtraEditors.PanelControl();
             this.dt_Equip = new DevExpress.XtraEditors.DateEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.gc_Equip = new SERP.GridControlEx();
+            this.gc_Equip = new MES.GridControlEx();
             this.gv_Equip = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.panReg)).BeginInit();
             this.panReg.SuspendLayout();
@@ -160,7 +160,7 @@
             this.gc_Equip.CellFocus = true;
             this.gc_Equip.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gc_Equip.EnterYN = true;
-            this.gc_Equip.Execl_GB = SERP.GridControlEx.Excel_GB.Update;
+            this.gc_Equip.Execl_GB = MES.GridControlEx.Excel_GB.Update;
             this.gc_Equip.ExpansionCHK = false;
             this.gc_Equip.Location = new System.Drawing.Point(0, 85);
             this.gc_Equip.MainView = this.gv_Equip;

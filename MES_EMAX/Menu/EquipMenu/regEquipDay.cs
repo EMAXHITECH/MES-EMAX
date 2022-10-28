@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 
-namespace SERP
+namespace MES
 {
     public partial class regEquipDay : BaseReg
     {
