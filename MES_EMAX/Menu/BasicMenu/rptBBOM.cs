@@ -61,6 +61,7 @@ namespace MES
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "수량", "Qty", 80, true);
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "Loss", "Loss_Per", 80, true);
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "실소요량", "Real_Qty", 80, true);
+            SetUp_Tree.Tree_Columns_Set(treeList_Bom, "사용여부", "User_Ck", 80, true);
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "자재구분코드", "BPart_Code", 120, false);
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "모코드", "MCode", 0, false);
             SetUp_Tree.Tree_Columns_Set(treeList_Bom, "자코드", "SCode", 0, false);
