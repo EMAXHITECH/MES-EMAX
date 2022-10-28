@@ -64,7 +64,7 @@ namespace MES
             SetUp_Tree.Tree_Columns_Set(tree_Plan, "MCode", "MCode", 0, false);
             SetUp_Tree.Tree_Columns_Set(tree_Plan, "SCode", "SCode", 0, false);
             SetUp_Tree.Tree_Columns_Set(tree_Plan, "Item_BPart", "Item_BPart", 0, false);
-            SetUp_Tree.Tree_Columns_Set(tree_Plan, "외주 체크", "Out_Ck", 80, true); //추가
+            SetUp_Tree.Tree_Columns_Set(tree_Plan, "외주 체크", "Out_Ck", 80, true); //추가 
 
             SetUp_Tree.Tree_Columns_Key(tree_Plan, "SCode", "MCode");
 
