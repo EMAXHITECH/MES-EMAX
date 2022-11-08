@@ -117,7 +117,6 @@
             this.btn_Write.Size = new System.Drawing.Size(74, 23);
             this.btn_Write.TabIndex = 10;
             this.btn_Write.Text = "쓰기";
-            this.btn_Write.Visible = false;
             this.btn_Write.Click += new System.EventHandler(this.btn_Write_Click);
             // 
             // btn_Read
