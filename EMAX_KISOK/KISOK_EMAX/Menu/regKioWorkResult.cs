@@ -58,7 +58,7 @@ namespace KISOK_EMAX
             DbHelp.GridColumn_NumSet(gv_Sheet, "Qty", ForMat.SetDecimal("regWork", "Qty1"));
 
             gc_Sheet.AddRowYN = false;
-            gc_Sheet.PopMenuChk = false;
+            gc_Sheet.PopMenuChk = false;  
             gc_Sheet.MouseWheelChk = false;
 
             //사용자
