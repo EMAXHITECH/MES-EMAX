@@ -48,9 +48,9 @@
             this.gc_PLC = new DevExpress.XtraGrid.GridControl();
             this.gv_PLC = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.btn_Data = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.gv_OrderRece = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.btn_Data = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Port.Properties)).BeginInit();
@@ -117,6 +117,7 @@
             this.btn_Write.Size = new System.Drawing.Size(74, 23);
             this.btn_Write.TabIndex = 10;
             this.btn_Write.Text = "쓰기";
+            this.btn_Write.Visible = false;
             this.btn_Write.Click += new System.EventHandler(this.btn_Write_Click);
             // 
             // btn_Read
@@ -280,6 +281,18 @@
             this.panelControl3.Size = new System.Drawing.Size(563, 32);
             this.panelControl3.TabIndex = 1;
             // 
+            // btn_Data
+            // 
+            this.btn_Data.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Data.Appearance.Options.UseBorderColor = true;
+            this.btn_Data.Location = new System.Drawing.Point(484, 4);
+            this.btn_Data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Data.Name = "btn_Data";
+            this.btn_Data.Size = new System.Drawing.Size(74, 23);
+            this.btn_Data.TabIndex = 13;
+            this.btn_Data.Text = "누적데이터";
+            this.btn_Data.Click += new System.EventHandler(this.btn_Data_Click);
+            // 
             // labelControl5
             // 
             this.labelControl5.Location = new System.Drawing.Point(11, 9);
@@ -299,18 +312,6 @@
             this.gv_OrderRece.OptionsSelection.MultiSelect = true;
             this.gv_OrderRece.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
             this.gv_OrderRece.OptionsView.ShowGroupPanel = false;
-            // 
-            // btn_Data
-            // 
-            this.btn_Data.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Data.Appearance.Options.UseBorderColor = true;
-            this.btn_Data.Location = new System.Drawing.Point(484, 4);
-            this.btn_Data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Data.Name = "btn_Data";
-            this.btn_Data.Size = new System.Drawing.Size(74, 23);
-            this.btn_Data.TabIndex = 13;
-            this.btn_Data.Text = "누적데이터";
-            this.btn_Data.Click += new System.EventHandler(this.btn_Data_Click);
             // 
             // PLC
             // 
