@@ -66,7 +66,7 @@ namespace PLC_EMAX
                     return;
                 }
 
-                gc_Equip.DataSource = ret.ReturnDataSet.Tables[0];
+                gc_Equip.DataSource = ret.ReturnDataSet.Tables[0]; 
 
                 timer_PLC.Start();
             }
