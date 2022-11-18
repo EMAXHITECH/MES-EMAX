@@ -32,7 +32,7 @@ namespace MES
             DbHelp.GridSet(Grid_Work, View_Work, "Work_Date", "지시일자", "110", false, false, true);
             DbHelp.GridSet(Grid_Work, View_Work, "WorkSheet_No", "작지번호", "100", false, false, true);
             DbHelp.GridSet(Grid_Work, View_Work, "Company_Name", "사업장", "100", false, false, true);
-            DbHelp.GridSet(Grid_Work, View_Work, "Item_Code", "품목코드", "120", false, false, true);
+            DbHelp.GridSet(Grid_Work, View_Work, "Item_Code", "품목코드", "120", false, false, true); 
             DbHelp.GridSet(Grid_Work, View_Work, "Item_Name", "품목명", "120", false, false, true);
             DbHelp.GridSet(Grid_Work, View_Work, "SSize", "규격", "150", false, false, true);
             DbHelp.GridSet(Grid_Work, View_Work, "Q_Unit", "단위", "80", false, false, true);
