@@ -1,6 +1,6 @@
 # MES-EMAX
 
-## This solution is a MES System Developed by 'EMAX HITECH Company'.
+## This solution is a MES System with a function - data-gathering function.
 
 ### The above MES System records and manages all factory production activities as data, increasing productivity and enabling real-time communication between managers and field workers.
 ### And it is possible to automate the facilities by linking each other and check if there is any abnormalities in the facilities
