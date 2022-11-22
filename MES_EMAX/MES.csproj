@@ -324,6 +324,12 @@
     <Compile Include="Menu\EquipMenu\regEquipReq.Designer.cs">
       <DependentUpon>regEquipReq.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu\EquipMenu\rptPLC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu\EquipMenu\rptPLC.Designer.cs">
+      <DependentUpon>rptPLC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu\EquipMenu\rptEquip.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -587,6 +593,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\EquipMenu\regEquipReq.resx">
       <DependentUpon>regEquipReq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\EquipMenu\rptPLC.resx">
+      <DependentUpon>rptPLC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\EquipMenu\rptEquip.resx">
       <DependentUpon>rptEquip.cs</DependentUpon>
