@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79E54418-AE84-453D-ABD7-283AC74C509B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PLC_EMAX</RootNamespace>
+    <AssemblyName>PLC_EMAX</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MES.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v20.2.Win, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Presets, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Win, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseWaitForm.Designer.cs">
+      <DependentUpon>BaseWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\clsCommon.cs" />
+    <Compile Include="Class\Configurations.cs" />
+    <Compile Include="Class\DbHelp.cs" />
+    <Compile Include="Class\ForMat.cs" />
+    <Compile Include="Class\ReturnStruct.cs" />
+    <Compile Include="Class\SqlParam.cs" />
+    <Compile Include="Global\GlobalValue.cs" />
+    <Compile Include="Menu\BasicMenu\PLC_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\BasicMenu\PLC_Data.Designer.cs">
+      <DependentUpon>PLC_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\BasicMenu\PLC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\BasicMenu\PLC.Designer.cs">
+      <DependentUpon>PLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\GridControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="BaseWaitForm.resx">
+      <DependentUpon>BaseWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\BasicMenu\PLC_Data.resx">
+      <DependentUpon>PLC_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\BasicMenu\PLC.resx">
+      <DependentUpon>PLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Font\Font_Install.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Font\NanumBarunGothic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="NanumBarunGothic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SqlMap.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glyph_mail.svg" />
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContentArrangeInRows_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListMultilevel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Font\Font_Install.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Font\Font_Install.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MES.ico" />
+    <None Include="Resources\up.svg" />
+    <None Include="Resources\resetlayoutoptions.svg" />
+    <None Include="Resources\redo.svg" />
+    <None Include="Resources\trackingchanges_accept.svg" />
+    <None Include="Resources\saveandnew.svg" />
+    <None Include="Resources\saveas.svg" />
+    <None Include="Resources\print.svg" />
+    <None Include="Resources\actions_addcircled.svg" />
+    <None Include="Resources\actions_deletecircled.svg" />
+    <None Include="Resources\actions_forbid.svg" />
+    <Content Include="Resources\add_32x321.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\apply_32x321.png" />
+    <None Include="Resources\del.svg" />
+    <None Include="Resources\exporttoxls.svg" />
+    <None Include="Resources\copy.svg" />
+    <None Include="Resources\copy1.svg" />
+    <None Include="Resources\copy2.svg" />
+    <None Include="Resources\bo_contract.svg" />
+    <None Include="Resources\bo_document.svg" />
+    <None Include="Resources\bo_document1.svg" />
+    <None Include="Resources\bo_document2.svg" />
+    <None Include="Resources\bo_validation.svg" />
+    <Content Include="Resources\business_calculator.svg" />
+    <None Include="Resources\customers.svg" />
+    <Content Include="Resources\find_32x321.png" />
+    <None Include="Resources\marqueezoom.svg" />
+    <None Include="Resources\open2.svg" />
+    <Content Include="Resources\phone_16x16.png" />
+    <Content Include="Resources\phone_32x32.png" />
+    <None Include="Resources\menu.svg" />
+    <None Include="Resources\photo.png" />
+    <None Include="Resources\NanumBarunGothic.ttf" />
+    <None Include="Resources\NanumBarunGothicBold.ttf" />
+    <None Include="Resources\reset_32x321.png" />
+    <None Include="Resources\reset_16x161.png" />
+    <None Include="Resources\properties_16x161.png" />
+    <None Include="Resources\next_16x16.png" />
+    <None Include="Resources\reset_16x16.png" />
+    <None Include="Resources\reset_32x32.png" />
+    <None Include="Resources\properties_32x32.png" />
+    <None Include="Resources\properties_16x16.png" />
+    <None Include="Resources\customers_32x32.png" />
+    <None Include="Resources\listbullets_16x161.png" />
+    <None Include="Resources\listbullets_16x16.png" />
+    <None Include="Resources\exporttoepub_32x32.png" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\edit_16x16.png" />
+    <None Include="Resources\edit_32x32.png" />
+    <None Include="Resources\find_16x16.png" />
+    <None Include="Resources\find_32x32.png" />
+    <None Include="Resources\Emax.PNG" />
+    <None Include="Resources\calculatenow_16x16.png" />
+    <None Include="Resources\about_16x16.png" />
+    <None Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\1_emax_logo.png" />
+    <None Include="Resources\btn_del.png" />
+    <None Include="Resources\btn_src.png" />
+    <None Include="Resources\gnb_01.png" />
+    <None Include="Resources\gnb_02.png" />
+    <None Include="Resources\gnb_03.png" />
+    <None Include="Resources\gnb_04.png" />
+    <None Include="Resources\gnb_05.png" />
+    <None Include="Resources\gnb_06.png" />
+    <None Include="Resources\gnb_07.png" />
+    <None Include="Resources\gnb_08.png" />
+    <None Include="Resources\gnb_09.png" />
+    <None Include="Resources\gnb_10.png" />
+    <None Include="Resources\icon_close.png" />
+    <None Include="Resources\icon_dn.jpg" />
+    <None Include="Resources\icon_dn.png" />
+    <None Include="Resources\icon_excel.png" />
+    <None Include="Resources\icon_find.png" />
+    <None Include="Resources\icon_menu.png" />
+    <None Include="Resources\icon_modify.png" />
+    <None Include="Resources\icon_out.png" />
+    <None Include="Resources\icon_print.png" />
+    <None Include="Resources\icon_save.png" />
+    <None Include="Resources\icon_slt.png" />
+    <None Include="Resources\icon_src.png" />
+    <None Include="Resources\icon_subgnb.png" />
+    <None Include="Resources\icon_subgnb_dn.png" />
+    <None Include="Resources\icon_up.jpg" />
+    <None Include="Resources\icon_up.png" />
+    <None Include="Resources\icon_user.png" />
+    <None Include="Resources\icon_X.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\maxim.png" />
+    <None Include="Resources\Login.PNG" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Application_Exit.png" />
+    <Content Include="Resources\add_32x322.png" />
+    <Content Include="Resources\MoveDown16x16.png" />
+    <Content Include="Resources\MoveUp16x16.png" />
+    <None Include="Resources\tasklist_32x32.png" />
+    <None Include="Resources\printer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
