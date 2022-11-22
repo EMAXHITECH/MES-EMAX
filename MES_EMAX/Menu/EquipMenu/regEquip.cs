@@ -28,8 +28,65 @@ namespace MES
         {
             pictureEdit_Equip.Properties.ContextMenuStrip = new ContextMenuStrip();
 
+            Grid_Set();
 
             Search_Data();
+        }
+
+        private void Grid_Set()
+        {
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "IP_Addr", "IP 주소", "100", false, true, true, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "IP_Info", "주소 정보", "100", false, true, true, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "Port", "Port", "100", false, true, true, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "Device", "Device No", "100", false, false, false, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "Device_Name", "Device 설명", "100", false, true, true, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "Process_Name", "공정", "100", false, false, false, true);
+            DbHelp.GridSet(Grid_EQSet, View_EQSet, "Process_Code", "공정", "100", false, false, false, true);
+
+            DbHelp.GridColumn_Help(View_EQSet, "Process_Name", "Y");
+            RepositoryItemButtonEdit button_Help = (RepositoryItemButtonEdit)View_EQSet.Columns["Process_Name"].ColumnEdit;
+            button_Help.Buttons[0].Click += new EventHandler(Grid_Help);
+            View_EQSet.Columns["Process_Name"].ColumnEdit = button_Help;
+
+            //DbHelp.GridColumn_NumSet(View_EQSet, "Port", 0);
+
+            Grid_EQSet.DeleteRowEventHandler += new EventHandler(Delete_Row);
+
+            View_EQSet.OptionsView.ShowAutoFilterRow = false;
+            Grid_EQSet.AddRowYN = true;
+            Grid_EQSet.PopMenuChk = true;
+            Grid_EQSet.MouseWheelChk = true;
+        }
+
+        private void View_EQSet_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            if (e.Column.FieldName == "Process_Name")
+            {
+                DataRow Code = PopHelpForm.Return_Help_Row("sp_Help_General_Code", e.Value.NullString(), "30030");
+
+                View_EQSet.SetRowCellValue(e.RowHandle, "Process_Code", (Code == null) ? "" : Code[0].NullString());
+            }
+        }
+
+        private void Grid_EQSet_EditorKeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (View_EQSet.FocusedColumn.FieldName.Contains("Process") && e.KeyChar == 13)
+                Grid_Help(sender, null);
+        }
+
+        private void Grid_Help(object sender, EventArgs e)
+        {
+            PopHelpForm popHelp = new PopHelpForm("General", "sp_Help_General", "30030", View_EQSet.GetFocusedRowCellValue("Process_Name").NullString(), "N");
+            if (popHelp.ShowDialog() == DialogResult.OK)
+            {
+                View_EQSet.SetFocusedRowCellValue("Process_Code", popHelp.sRtCode);
+                View_EQSet.SetFocusedRowCellValue("Process_Name", popHelp.sRtCodeNm);
+            }
+        }
+
+        private void Delete_Row(object sender, EventArgs e)
+        {
+
         }
 
         #region 함수
@@ -91,26 +148,9 @@ namespace MES
                     txt_EquipCode.Enabled = true;
                 }
 
-                if (!string.IsNullOrWhiteSpace(txt_EquipCode.Text))
-                {
-                    DataTable Table = FileIF.Get_File_List(this.Name);
-
-                    DataRow[] Rows = (Table == null) ? null : Table.Select("File_Name LIKE '" + txt_EquipCode.Text + "%'");
-
-                    if (Rows != null && Rows.Count() > 0)
-                    {
-                        string Path = this.Name + "/" + Rows[0]["File_Name"].NullString();
-                        pictureEdit_Equip.Image = FileIF.FTP_Download_Image(Path);
-                        pictureEdit_Equip.ToolTip = Path;
-                    }
-                    else
-                    {
-                        pictureEdit_Equip.Image = null;
-                        pictureEdit_Equip.ToolTip = "";
-                    }
-
-                    pictureEdit_Equip.Refresh();
-                }
+                Grid_EQSet.DataSource = ret.ReturnDataSet.Tables[1];
+                Grid_EQSet.RefreshDataSource();
+                View_EQSet.BestFitColumns();
 
                 ForMat.sBasic_Set(this.Name, txt_EquipCode);
 
@@ -211,6 +251,18 @@ namespace MES
             {
                 if ((!txt_EquipCode.Enabled || DbHelp.Check_Val(txt_EquipCode)) && DbHelp.Check_Val(txt_EquipNM, txt_KindNM, txt_CustomNM))
                 {
+                    string sDevice = "", sIP_Addr = "", sIP_Info = "", sDevice_Name = "", sProcess_Code = "", sPort = "";
+
+                    for(int i = 0; i < View_EQSet.RowCount; i++)
+                    {
+                        sDevice += View_EQSet.GetRowCellValue(i, "Device").ToString() + "_/";
+                        sIP_Addr += View_EQSet.GetRowCellValue(i, "IP_Addr").ToString() + "_/";
+                        sIP_Info += View_EQSet.GetRowCellValue(i, "IP_Info").ToString() + "_/";
+                        sDevice_Name += View_EQSet.GetRowCellValue(i, "Device_Name").ToString() + "_/";
+                        sProcess_Code += View_EQSet.GetRowCellValue(i, "Process_Code").ToString() + "_/";
+                        sPort += View_EQSet.GetRowCellValue(i, "Port").NumString() + "_/";
+                    }
+
                     SqlParam sp = new SqlParam("sp_regEquip");
                     sp.AddParam("Kind", "I");
                     sp.AddParam("Equip_Code", txt_EquipCode.Text);
@@ -227,6 +279,13 @@ namespace MES
                     sp.AddParam("M_Memo", Memo_Equip.Text);
                     sp.AddParam("Reg_User", GlobalValue.sUserID);
 
+                    sp.AddParam("IP_Addr", sIP_Addr);
+                    sp.AddParam("IP_Info", sIP_Info);
+                    sp.AddParam("Device", sDevice);
+                    sp.AddParam("Device_Name", sDevice_Name);
+                    sp.AddParam("Process_Code", sProcess_Code);
+                    sp.AddParam("Port", sPort);
+
                     ret = DbHelp.Proc_Save(sp);
 
                     if (ret.ReturnChk != 0)
@@ -236,22 +295,6 @@ namespace MES
                     }
 
                     txt_EquipCode.Text = ret.ReturnDataSet.Tables[0].Rows[0][0].NullString();
-
-                    if (pictureEdit_Equip.Image != null)
-                    {
-                        if (!pictureEdit_Equip.ToolTip.Contains("ftp"))
-                        {
-                            string File_Name = pictureEdit_Equip.ToolTip.Substring(pictureEdit_Equip.ToolTip.LastIndexOf("\\") + 1, pictureEdit_Equip.ToolTip.Length - pictureEdit_Equip.ToolTip.LastIndexOf("\\") - 1);
-
-                            //FileIF.FTP_Directory(GlobalValue.Basic_URL + this.Name);
-
-                            //FileIF.FTP_Upload_File(pictureEdit_Equip.ToolTip, GlobalValue.Basic_URL + this.Name + "/" + txt_EquipCode.Text + File_Name.Substring(File_Name.LastIndexOf("."), File_Name.Length - File_Name.LastIndexOf(".")));
-                        }
-                    }
-                    else if (pictureEdit_Equip.Image == null)
-                    {
-                        FileIF.FTP_Delete_File(pictureEdit_Equip.ToolTip);
-                    }
 
                     return true;
                 }
@@ -408,5 +451,7 @@ namespace MES
                 Image_Help.Image_Right_Click(sender, e);
             }
         }
+
+
     }
 }
