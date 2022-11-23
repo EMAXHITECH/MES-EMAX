@@ -1,0 +1,23 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1" style="enable-background:new 0 0 32 32">
+  <style type="text/css">
+	.Yellow{fill:#FFB115;}
+	.Red{fill:#D11C1C;}
+	.Black{fill:#727272;}
+	.Blue{fill:#1177D7;}
+	.White{fill:#FFFFFF;}
+	.Green{fill:#039C23;}
+	.st0{opacity:0.75;}
+	.st1{opacity:0.5;}
+	.st2{opacity:0.25;}
+	.st3{fill:#FFB115;}
+</style>
+  <g id="Images">
+    <path d="M29,4H3C2.5,4,2,4.5,2,5v22c0,0.5,0.5,1,1,1h26c0.5,0,1-0.5,1-1V5C30,4.5,29.5,4,29,4z M28,26H4V6h24V26z" class="Black" />
+    <circle cx="21" cy="11" r="3" class="Yellow" />
+    <polygon points="20,24 10,14 6,18 6,24  " class="Green" />
+    <g class="st1">
+      <polygon points="22,24 18,20 20,18 26,24   " class="Green" />
+    </g>
+  </g>
+</svg>

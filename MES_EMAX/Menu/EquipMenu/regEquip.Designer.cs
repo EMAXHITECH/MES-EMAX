@@ -41,6 +41,8 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel_M = new DevExpress.XtraEditors.PanelControl();
+            this.Grid_EQSet = new MES.GridControlEx();
+            this.View_EQSet = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txt_location = new DevExpress.XtraEditors.ButtonEdit();
             this.txt_Maker = new DevExpress.XtraEditors.ButtonEdit();
             this.txt_Custom = new DevExpress.XtraEditors.ButtonEdit();
@@ -78,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_RegDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_M)).BeginInit();
             this.panel_M.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_EQSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.View_EQSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_location.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Maker.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Custom.Properties)).BeginInit();
@@ -318,6 +322,7 @@
             // 
             this.panel_M.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(182)))));
             this.panel_M.Appearance.Options.UseBackColor = true;
+            this.panel_M.Controls.Add(this.Grid_EQSet);
             this.panel_M.Controls.Add(this.txt_location);
             this.panel_M.Controls.Add(this.txt_Maker);
             this.panel_M.Controls.Add(this.txt_Custom);
@@ -347,6 +352,37 @@
             this.panel_M.Name = "panel_M";
             this.panel_M.Size = new System.Drawing.Size(1100, 749);
             this.panel_M.TabIndex = 78;
+            // 
+            // Grid_EQSet
+            // 
+            this.Grid_EQSet.AddRowYN = false;
+            this.Grid_EQSet.CellFocus = true;
+            this.Grid_EQSet.EnterYN = true;
+            this.Grid_EQSet.Execl_GB = MES.GridControlEx.Excel_GB.Update;
+            this.Grid_EQSet.ExpansionCHK = false;
+            this.Grid_EQSet.Head_DoubleChk = true;
+            this.Grid_EQSet.Location = new System.Drawing.Point(126, 551);
+            this.Grid_EQSet.MainView = this.View_EQSet;
+            this.Grid_EQSet.MouseWheelChk = true;
+            this.Grid_EQSet.MultiSelectChk = true;
+            this.Grid_EQSet.Name = "Grid_EQSet";
+            this.Grid_EQSet.PopMenuChk = true;
+            this.Grid_EQSet.Size = new System.Drawing.Size(796, 200);
+            this.Grid_EQSet.TabIndex = 74;
+            this.Grid_EQSet.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.View_EQSet});
+            this.Grid_EQSet.EditorKeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Grid_EQSet_EditorKeyPress);
+            // 
+            // View_EQSet
+            // 
+            this.View_EQSet.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
+            this.View_EQSet.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.View_EQSet.GridControl = this.Grid_EQSet;
+            this.View_EQSet.Name = "View_EQSet";
+            this.View_EQSet.OptionsClipboard.PasteMode = DevExpress.Export.PasteMode.Update;
+            this.View_EQSet.OptionsSelection.MultiSelect = true;
+            this.View_EQSet.OptionsView.ShowGroupPanel = false;
+            this.View_EQSet.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.View_EQSet_CellValueChanged);
             // 
             // txt_location
             // 
@@ -699,6 +735,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.panel_M)).EndInit();
             this.panel_M.ResumeLayout(false);
             this.panel_M.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_EQSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.View_EQSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_location.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Maker.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Custom.Properties)).EndInit();
@@ -757,5 +795,7 @@
         private DevExpress.XtraEditors.ButtonEdit txt_Maker;
         private DevExpress.XtraEditors.ButtonEdit txt_Custom;
         private DevExpress.XtraEditors.ButtonEdit txt_Kind;
+        private GridControlEx Grid_EQSet;
+        private DevExpress.XtraGrid.Views.Grid.GridView View_EQSet;
     }
 }
