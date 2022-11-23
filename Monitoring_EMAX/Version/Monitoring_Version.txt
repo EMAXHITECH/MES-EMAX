@@ -1,0 +1,2 @@
+ApplicationName|Version|Release date|downloadUrl|FileName
+Monitoring|1.000|06/29/2022|http://211.171.220.138/EMAX_Monitoring/|Monitoring.zip
