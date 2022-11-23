@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.106.0.29\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.106.0.29\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.106.0.29\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.106.0.29\build\cef.redist.x64.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E55B975-9594-4D8F-959A-D7CF04DDAC71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KISOK_EMAX</RootNamespace>
+    <AssemblyName>KISOK</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MES.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CefSharp, Version=106.0.290.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.106.0.290\lib\net452\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=106.0.290.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.106.0.290\lib\net452\CefSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=106.0.290.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.106.0.290\lib\net452\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.UI, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseWaitForm.Designer.cs">
+      <DependentUpon>BaseWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Config.designer.cs">
+      <DependentUpon>Change_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Configurations.cs" />
+    <Compile Include="Class\DbHelp.cs" />
+    <Compile Include="Class\ForMat.cs" />
+    <Compile Include="Class\ReturnStruct.cs" />
+    <Compile Include="Class\SqlParam.cs" />
+    <Compile Include="Help\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help\KeyPadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\KeyPadForm.Designer.cs">
+      <DependentUpon>KeyPadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\PopForm\PopItemImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\PopForm\PopItemImage.Designer.cs">
+      <DependentUpon>PopItemImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\PopForm\PopWorkResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\PopForm\PopWorkResult.Designer.cs">
+      <DependentUpon>PopWorkResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\regKioProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\regKioProcess.Designer.cs">
+      <DependentUpon>regKioProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\regKioWorkResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\regKioWorkResult.Designer.cs">
+      <DependentUpon>regKioWorkResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Report_DonBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_DonBar.Designer.cs">
+      <DependentUpon>Report_DonBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Report_Bar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Report_Bar.Designer.cs">
+      <DependentUpon>Report_Bar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\GridControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="BaseWaitForm.resx">
+      <DependentUpon>BaseWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Config.resx">
+      <DependentUpon>Change_Config.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\KeyPadForm.resx">
+      <DependentUpon>KeyPadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\PopForm\PopItemImage.resx">
+      <DependentUpon>PopItemImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\PopForm\PopWorkResult.resx">
+      <DependentUpon>PopWorkResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\regKioProcess.resx">
+      <DependentUpon>regKioProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\regKioWorkResult.resx">
+      <DependentUpon>regKioWorkResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\Report_DonBar.resx">
+      <DependentUpon>Report_DonBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_Bar.resx">
+      <DependentUpon>Report_Bar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MES.ico" />
+    <Content Include="Resources\actions_deletecircled.svg" />
+    <Content Include="Resources\actions_removecircled.svg" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <Content Include="Resources\bo_order_item.svg" />
+    <Content Include="Resources\bo_vendor.svg" />
+    <None Include="Resources\bun.jpg" />
+    <None Include="Resources\bun_1.jpg" />
+    <None Include="Resources\busBar.jpg" />
+    <None Include="Resources\busDonBar.jpg" />
+    <Content Include="Resources\cancel_32x32.png" />
+    <None Include="Resources\out.jpg" />
+    <None Include="Resources\out_1.jpg" />
+    <None Include="Resources\d.txt" />
+    <None Include="Resources\images.svg" />
+    <Content Include="Resources\product.png" />
+    <None Include="Resources\work.jpg" />
+    <None Include="Resources\stock.jpg" />
+    <None Include="Resources\remove_32x32.png" />
+    <Content Include="Resources\showlegend.svg" />
+    <Content Include="Resources\wraptext.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.106.0.29\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.106.0.29\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.106.0.29\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.106.0.29\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.106.0.290\build\CefSharp.Common.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
