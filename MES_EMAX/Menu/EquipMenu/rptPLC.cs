@@ -64,7 +64,10 @@ namespace MES
 
         private void btn_Excel_Click(object sender, EventArgs e)
         {
-            FileIF.Excel_Down(gc_Equip, this.Name);
+            if(gc_Equip.Focused)
+                FileIF.Excel_Down(gc_Equip, this.Name);
+            else
+                FileIF.Excel_Down(gc_PLC, this.Name);
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
