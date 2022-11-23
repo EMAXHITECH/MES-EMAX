@@ -66,7 +66,7 @@ namespace PLC_EMAX
 
                 decimal dTime = stopwatch.ElapsedMilliseconds / (decimal)1000;
 
-                txt_Time.Text = dTime.NumString();
+                txt_Time.EditValue = dTime;
 
                 gc_PLC.DataSource = ret.ReturnDataSet.Tables[0];
             }
