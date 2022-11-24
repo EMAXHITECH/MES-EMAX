@@ -13,7 +13,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraGrid.Scrolling;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class regKioWorkResult : DevExpress.XtraEditors.XtraForm
     {
@@ -477,10 +477,6 @@ namespace KISOK_EMAX
                 timer_Search.Start();
                 return;
             }
-
-            PopItemImage item_Image = new PopItemImage();
-            item_Image.sItem_Code = sItem_Code;
-            item_Image.ShowDialog();
         }
     }
 }

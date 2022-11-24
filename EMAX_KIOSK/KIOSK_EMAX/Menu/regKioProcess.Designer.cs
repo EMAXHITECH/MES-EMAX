@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class regKioProcess
     {
@@ -35,7 +35,7 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regKioProcess));
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.gc_Process = new KISOK_EMAX.GridControlEx();
+            this.gc_Process = new KIOSK_EMAX.GridControlEx();
             this.gv_Process = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.dt_Result = new DevExpress.XtraEditors.DateEdit();
@@ -72,7 +72,7 @@
             this.gc_Process.EmbeddedNavigator.Appearance.Options.UseForeColor = true;
             this.gc_Process.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gc_Process.EnterYN = true;
-            this.gc_Process.Execl_GB = KISOK_EMAX.GridControlEx.Excel_GB.Update;
+            this.gc_Process.Execl_GB = KIOSK_EMAX.GridControlEx.Excel_GB.Update;
             this.gc_Process.ExpansionCHK = false;
             this.gc_Process.Head_DoubleChk = true;
             this.gc_Process.Hide_Point = false;
@@ -191,7 +191,7 @@
 
         #endregion
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private KISOK_EMAX.GridControlEx gc_Process;
+        private KIOSK_EMAX.GridControlEx gc_Process;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_Process;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;

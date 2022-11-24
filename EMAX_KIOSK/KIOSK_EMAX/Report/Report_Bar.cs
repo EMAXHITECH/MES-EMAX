@@ -5,7 +5,7 @@ using System.ComponentModel;
 using DevExpress.XtraReports.UI;
 using System.Data;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class Report_Bar : DevExpress.XtraReports.UI.XtraReport
     {

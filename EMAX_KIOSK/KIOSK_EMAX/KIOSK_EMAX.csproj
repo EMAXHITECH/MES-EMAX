@@ -11,8 +11,8 @@
     <ProjectGuid>{6E55B975-9594-4D8F-959A-D7CF04DDAC71}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KISOK_EMAX</RootNamespace>
-    <AssemblyName>KISOK</AssemblyName>
+    <RootNamespace>KIOSK_EMAX</RootNamespace>
+    <AssemblyName>KIOSK_EMAX</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -115,12 +115,6 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu\PopForm\PopItemImage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu\PopForm\PopItemImage.Designer.cs">
-      <DependentUpon>PopItemImage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu\PopForm\PopWorkResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +165,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu\PopForm\PopItemImage.resx">
-      <DependentUpon>PopItemImage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\PopForm\PopWorkResult.resx">
       <DependentUpon>PopWorkResult.cs</DependentUpon>

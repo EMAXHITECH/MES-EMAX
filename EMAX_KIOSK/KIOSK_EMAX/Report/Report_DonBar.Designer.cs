@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class Report_DonBar
     {
@@ -155,7 +155,7 @@
             // xrPictureBox1
             // 
             this.xrPictureBox1.ImageAlignment = DevExpress.XtraPrinting.ImageAlignment.TopLeft;
-            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::KISOK_EMAX.Properties.Resources.busDonBar, true);
+            this.xrPictureBox1.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource(global::KIOSK_EMAX.Properties.Resources.busDonBar, true);
             this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrPictureBox1.Name = "xrPictureBox1";
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(340F, 425.21F);

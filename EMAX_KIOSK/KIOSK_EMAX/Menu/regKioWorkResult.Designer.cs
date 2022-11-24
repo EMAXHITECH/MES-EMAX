@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class regKioWorkResult
     {
@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(regKioWorkResult));
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.gc_Sheet = new KISOK_EMAX.GridControlEx();
+            this.gc_Sheet = new KIOSK_EMAX.GridControlEx();
             this.gv_Sheet = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gc_User = new KISOK_EMAX.GridControlEx();
+            this.gc_User = new KIOSK_EMAX.GridControlEx();
             this.gv_User = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -106,7 +106,7 @@
             this.gc_Sheet.EmbeddedNavigator.Appearance.Options.UseForeColor = true;
             this.gc_Sheet.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gc_Sheet.EnterYN = true;
-            this.gc_Sheet.Execl_GB = KISOK_EMAX.GridControlEx.Excel_GB.Update;
+            this.gc_Sheet.Execl_GB = KIOSK_EMAX.GridControlEx.Excel_GB.Update;
             this.gc_Sheet.ExpansionCHK = false;
             this.gc_Sheet.Head_DoubleChk = true;
             this.gc_Sheet.Hide_Point = false;
@@ -154,7 +154,7 @@
             this.gc_User.EmbeddedNavigator.Appearance.Options.UseForeColor = true;
             this.gc_User.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gc_User.EnterYN = true;
-            this.gc_User.Execl_GB = KISOK_EMAX.GridControlEx.Excel_GB.Update;
+            this.gc_User.Execl_GB = KIOSK_EMAX.GridControlEx.Excel_GB.Update;
             this.gc_User.ExpansionCHK = false;
             this.gc_User.Head_DoubleChk = true;
             this.gc_User.Hide_Point = false;
@@ -221,7 +221,7 @@
             this.btn_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Add.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Add.Appearance.Options.UseFont = true;
-            this.btn_Add.ImageOptions.Image = global::KISOK_EMAX.Properties.Resources.add_32x32;
+            this.btn_Add.ImageOptions.Image = global::KIOSK_EMAX.Properties.Resources.add_32x32;
             this.btn_Add.Location = new System.Drawing.Point(1072, 5);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Add.Name = "btn_Add";
@@ -235,7 +235,7 @@
             this.btn_Del.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Del.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Del.Appearance.Options.UseFont = true;
-            this.btn_Del.ImageOptions.Image = global::KISOK_EMAX.Properties.Resources.remove_32x32;
+            this.btn_Del.ImageOptions.Image = global::KIOSK_EMAX.Properties.Resources.remove_32x32;
             this.btn_Del.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btn_Del.Location = new System.Drawing.Point(1174, 5);
             this.btn_Del.Margin = new System.Windows.Forms.Padding(5);
@@ -267,7 +267,7 @@
             this.btn_Search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Search.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Search.Appearance.Options.UseFont = true;
-            this.btn_Search.ImageOptions.SvgImage = global::KISOK_EMAX.Properties.Resources.images;
+            this.btn_Search.ImageOptions.SvgImage = global::KIOSK_EMAX.Properties.Resources.images;
             this.btn_Search.Location = new System.Drawing.Point(760, 5);
             this.btn_Search.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Search.Name = "btn_Search";
@@ -306,7 +306,7 @@
             this.btn_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Start.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Start.Appearance.Options.UseFont = true;
-            this.btn_Start.ImageOptions.SvgImage = global::KISOK_EMAX.Properties.Resources.gettingstarted;
+            this.btn_Start.ImageOptions.SvgImage = global::KIOSK_EMAX.Properties.Resources.gettingstarted;
             this.btn_Start.Location = new System.Drawing.Point(920, 5);
             this.btn_Start.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Start.Name = "btn_Start";
@@ -321,7 +321,7 @@
             this.btn_End.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_End.Appearance.Options.UseFont = true;
             this.btn_End.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btn_End.ImageOptions.SvgImage = global::KISOK_EMAX.Properties.Resources.actions_removecircled;
+            this.btn_End.ImageOptions.SvgImage = global::KIOSK_EMAX.Properties.Resources.actions_removecircled;
             this.btn_End.Location = new System.Drawing.Point(1080, 5);
             this.btn_End.Margin = new System.Windows.Forms.Padding(5);
             this.btn_End.Name = "btn_End";
@@ -365,7 +365,7 @@
 
         #endregion
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private KISOK_EMAX.GridControlEx gc_Sheet;
+        private KIOSK_EMAX.GridControlEx gc_Sheet;
         private DevExpress.XtraGrid.Views.Grid.GridView gv_Sheet;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.SimpleButton btn_Start;

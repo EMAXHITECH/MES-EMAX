@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class KeyPadForm : DevExpress.XtraEditors.XtraForm
     {

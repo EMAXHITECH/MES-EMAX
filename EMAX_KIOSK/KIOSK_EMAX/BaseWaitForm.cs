@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraWaitForm;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class BaseWaitForm : WaitForm
     {

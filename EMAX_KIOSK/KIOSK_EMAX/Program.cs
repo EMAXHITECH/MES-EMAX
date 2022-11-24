@@ -6,7 +6,7 @@ using DevExpress.UserSkins;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     static class Program
     {

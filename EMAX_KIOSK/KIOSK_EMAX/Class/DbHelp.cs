@@ -15,7 +15,7 @@ using DevExpress.XtraEditors.Repository;
 using System.Drawing;
 using DevExpress.XtraEditors.Controls;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public class DbHelp
     {

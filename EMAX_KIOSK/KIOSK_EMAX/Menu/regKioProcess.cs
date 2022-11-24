@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class regKioProcess : DevExpress.XtraEditors.XtraForm
     {

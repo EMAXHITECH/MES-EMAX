@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class KeyPadForm
     {

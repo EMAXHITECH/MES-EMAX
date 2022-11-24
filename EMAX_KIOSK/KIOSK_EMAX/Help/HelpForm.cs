@@ -11,7 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class HelpForm : DevExpress.XtraEditors.XtraForm
     {

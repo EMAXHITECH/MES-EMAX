@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public class SqlParam
     {

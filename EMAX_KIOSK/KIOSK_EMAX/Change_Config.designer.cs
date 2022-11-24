@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class Change_Config
     {
@@ -267,7 +267,7 @@
             this.btn_Close.Appearance.Options.UseBackColor = true;
             this.btn_Close.Appearance.Options.UseBorderColor = true;
             this.btn_Close.Appearance.Options.UseForeColor = true;
-            this.btn_Close.ImageOptions.SvgImage = global::KISOK_EMAX.Properties.Resources.cancel;
+            this.btn_Close.ImageOptions.SvgImage = global::KIOSK_EMAX.Properties.Resources.cancel;
             this.btn_Close.Location = new System.Drawing.Point(209, 237);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Close.Name = "btn_Close";

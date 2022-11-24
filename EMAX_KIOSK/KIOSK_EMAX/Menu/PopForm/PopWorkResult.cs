@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class PopWorkResult : DevExpress.XtraEditors.XtraForm
     {

@@ -14,7 +14,7 @@ using DevExpress.XtraEditors;
 using DevExpress.Utils;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public class GridControlEx : GridControl
     {

@@ -9,7 +9,7 @@ using DevExpress.XtraSplashScreen;
 using System.Security.Cryptography;
 using System.Drawing.Text;
 using System.IO;
-using KISOK_EMAX.Properties;
+using KIOSK_EMAX.Properties;
 using System.Net;
 using System.Reflection;
 using System.Diagnostics;
@@ -19,7 +19,7 @@ using System.Threading;
 using DevExpress.XtraEditors;
 using System.Data.SqlClient;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class Change_Config : DevExpress.XtraEditors.XtraForm
     {

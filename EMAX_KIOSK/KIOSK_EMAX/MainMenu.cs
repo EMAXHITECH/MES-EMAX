@@ -13,7 +13,7 @@ using System.Resources;
 using System.Text;
 using System.Windows.Forms;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public partial class MainMenu : DevExpress.XtraEditors.XtraForm
     {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace KISOK_EMAX
+namespace KIOSK_EMAX
 {
     public static class ForMat
     {

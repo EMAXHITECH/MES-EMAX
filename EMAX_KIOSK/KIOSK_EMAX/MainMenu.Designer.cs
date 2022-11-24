@@ -1,4 +1,4 @@
-﻿namespace KISOK_EMAX
+﻿namespace KIOSK_EMAX
 {
     partial class MainMenu
     {
@@ -104,7 +104,7 @@
             // 
             // Panel_Title
             // 
-            this.Panel_Title.ContentImage = global::KISOK_EMAX.Properties.Resources.work1;
+            this.Panel_Title.ContentImage = global::KIOSK_EMAX.Properties.Resources.work1;
             this.Panel_Title.Controls.Add(this.Label_Title);
             this.Panel_Title.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Title.Location = new System.Drawing.Point(0, 141);
