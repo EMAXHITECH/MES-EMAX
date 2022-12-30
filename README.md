@@ -26,7 +26,7 @@
    1) Specification
 
     1-1) .NET 4.5.2 Or Over than .NET 4.5.2 
-    1-2) Dev 20.2.8 Or Over than Dev 20.2.8
+    1-2) Dev 20.2.12 Or Over than Dev 20.2.12
     1-3) Visual Studio 2017 Or Over than Visual Studio 2017
     1-4) Mssql 2016 Or Over than Mssql 2016
     
