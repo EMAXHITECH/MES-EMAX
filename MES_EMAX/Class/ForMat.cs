@@ -46,6 +46,16 @@ namespace MES
                 return result.ToString();
         }
 
+        public static decimal ToDecimal(this object result)
+        {
+            return Convert.ToDecimal(result.NumString());
+        }
+
+        public static int ToInt(this object result)
+        {
+            return Convert.ToInt32(result.NumString());
+        }
+
         public static int SetDecimal(string sMenu, string sColumn)
         {
             try
