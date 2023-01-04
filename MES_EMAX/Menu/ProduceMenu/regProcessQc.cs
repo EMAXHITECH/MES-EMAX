@@ -692,7 +692,7 @@ namespace MES
             {
                 if(e.Value.ToString() == "Y")
                 {
-                    gv_Qc.SetRowCellValue(e.RowHandle, "Good_Qty", gv_Qc.GetRowCellValue(e.RowHandle, "In_Qty"));
+                    gv_Qc.SetRowCellValue(e.RowHandle, "Good_Qty", gv_Qc.GetRowCellValue(e.RowHandle, "Result_Qty"));
                     gv_Qc.SetRowCellValue(e.RowHandle, "Qc_Date", DateTime.Today.ToString("yyyy-MM-dd"));
                     gv_Qc.SetRowCellValue(e.RowHandle, "User_Name", GlobalValue.sUserNm);
                     gv_Qc.CellValueChanging -= new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(gv_Qc_CellValueChanging);
