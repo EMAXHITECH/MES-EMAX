@@ -60,7 +60,7 @@ namespace MES
             DbHelp.GridColumn_NumSet(gv_Item, "Stock_Qty", ForMat.SetDecimal(this.Name, "Qty1"));
             DbHelp.GridColumn_NumSet(gv_Item, "Lead_Time", ForMat.SetDecimal(this.Name, "Price1"));
 
-            FileIF.Set_URL();
+            //FileIF.Set_URL();
 
             RepositoryItemPictureEdit item_Image = new RepositoryItemPictureEdit();
             item_Image.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
