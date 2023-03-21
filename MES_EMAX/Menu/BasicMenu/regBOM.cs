@@ -67,6 +67,8 @@ namespace MES
             DbHelp.GridColumn_NumSet(gv_BOM, "Loss_Per", ForMat.SetDecimal(this.Name, "Qty1"));
             DbHelp.GridColumn_NumSet(gv_BOM, "Real_Qty", ForMat.SetDecimal(this.Name, "Qty1"));
 
+            DbHelp.GridColumn_CheckBox(gv_BOM, "Use_Ck");
+
             DbHelp.GridColumn_Help(gv_BOM, "SItem_Code", "Y");
             RepositoryItemButtonEdit button_Help_M1 = (RepositoryItemButtonEdit)gv_BOM.Columns["SItem_Code"].ColumnEdit;
             button_Help_M1.Buttons[0].Click += new EventHandler(grid_Item_Help);
